@@ -143,9 +143,41 @@ Blockchain Fundamentals
         b. Increased block size from 1MB to 8MB
         c. History
             -  August 1st, 2017, ViaBTC pool produced a 1.9MB block
-            - 
-    9. Getting Started
-    10. Resources
+            - 1:1 Match BTC to BCH
+    9. Forks, Transactons, and Segregated Witness
+        a. What is a fork?
+            - "A Fork takes place when a blockchain splits into two different paths forward."
+            - Hard Fork - introduces a change that forces everyone to upgrade
+            - Soft Fork - introduces a change that is backwards compatible
+            - Forks on Bitcoin happen on a regular basis
+                - Two or more miners solve a block at the same time, for awhile there are extra chains
+                - Eventually one of the chain wins over the other
+                - Orphan block, released back to the Mempool, where transactions are kept waiting to confirm
+        b. Hard Fork: Bitcoin Cash
+            - August 1st Bitcoin Cash was born
+            - User Activated Hard Fork - UAHF, 478558
+        c. Soft Fork: Bitcoin w/ SegWit
+            - August 8th, User Activated Soft Fork - UASF, 479707
+            - August 24th SegWit activated 481824
+            - Replaces Block Size Limit with Block Weight
+        d. What is SegWit?
+            - Protocol Upgrade, improves scalability of bitcoin without increasing block size
+            - Address transaction malleability
+            - Does not require upgrading to remain on the Blockchain
+            - Transaction Main Components
+                - Input - Where coins coming from
+                - Amount - What value of BTC
+                - Output - Where coins are going
+                - Digital SIgnature, transaction must be digitally signed using the owner's private key
+            - SegWit Transaction
+                - Signature data/witnesss is segregated into extended block
+                - Frees up 60-63% of the data
+                - Includes input and amount as part of digital signature
+                - Should reduce pressure and transaction fees
+    10. Future of Bitcoin Mining
+        a. 
+    11. Getting Started
+    12. Resources
         a. demoblockchain.org
         b. demoblockchain.org/hash
         c. demoblockchain.org/block
