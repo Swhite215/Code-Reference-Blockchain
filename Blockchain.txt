@@ -1,1 +1,12 @@
-Blockchain Notes
+Blockchain Fundamentals
+    1. What is a Blockchain?
+        a. Provides a single source of truth that is verifiable, tamper-proof and unchangeable.
+        b. "A constantly growing ledger, that keeps a permanent record of all the transactions that have taken place, in a secure, chronological, and immutable way."
+    2. What is Bitcoin?
+        a. Type of digital asset that can be bought, sold, or transferred securely.
+        b. Peer-to-Peer no 3rd party involved
+        c. Bitcoin Network w/ Blockchain (Decentralized Record)
+    3. Key Concepts in Bitcoin
+    4. Value of Blockchain
+    5. Common Misconception
+    6. Getting Started
