@@ -117,7 +117,13 @@ Blockchain Fundamentals
             - Humanitarian Aid
                 - United Nations World Food Programme used Ethereum to aid Syrian refugees
     6. Limitations of Blockchain Technology
-        - 
+        a. Early Stage, not many fully fleshed out products
+        b. Lack of Awareness
+        c. Limited Available Technical Talent
+        d. Immutable, no reversals or modifications
+        e. Key Management, public and private keys
+        f. Scalability
+        g. Time to Process, ~10 minutes
     7. Common Misconceptions
     8. Getting Started
     9. Resources
