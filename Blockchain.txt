@@ -139,7 +139,11 @@ Blockchain Fundamentals
         e. You need to buy a full bitcoin to started
             - False, you can get into bitcoin for far less
     8. Bitcoin Cash
-        a. 
+        a. New cryptocurrency developed from a "Hard Fork" in the Bitcoin Blockchain
+        b. Increased block size from 1MB to 8MB
+        c. History
+            -  August 1st, 2017, ViaBTC pool produced a 1.9MB block
+            - 
     9. Getting Started
     10. Resources
         a. demoblockchain.org
@@ -153,3 +157,7 @@ Blockchain Fundamentals
         i. blockchaininformer.com
         j. blockchain.info
         k. blockexplorer.com
+        l. bitcoincash.org
+        m. coinmarketcap.com
+        n. blockdozer.com
+        o. blockchair.com
