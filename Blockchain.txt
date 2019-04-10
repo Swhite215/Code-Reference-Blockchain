@@ -202,6 +202,29 @@ Blockchain Fundamentals
             - Create child Hashes from combined hashes
             - Merkle Root, single hash from all hashes below
     12. Getting Started
+        a. Learn about Bitcoin
+        b. Choose Your Wallet
+            - bitcoin.org/en/choose-your-wallet
+            - Mobile, Desktop, Hardware, Web
+            - Start with one wallet, get a small amount, practice
+        c. Get an Address
+        d. Public and Private Key
+        e. Get bitcoins
+            - Earn
+            - Mine
+            - Gift
+            - Spend
+            - Send
+        f. Sending and Receiving Bitcoins
+            - Public Key - receive BTC
+            - Private Key - authorize spending or sending
+        g. Converting Bitcoins to Fiat Currency
+            - Cryptocurrency Exchange
+            - Bitcoin Debit Card
+            - Sell bitcoin to someone else
+            - Local Trading Site
+            - Bitcoin ATM
+            - Bitcoin Teller Machine
     13. Resources
         a. demoblockchain.org
         b. demoblockchain.org/hash
@@ -218,3 +241,5 @@ Blockchain Fundamentals
         m. coinmarketcap.com
         n. blockdozer.com
         o. blockchair.com
+        p. bitcoin.org
+        q. bitcoin.org/en/choose-your-wallet
