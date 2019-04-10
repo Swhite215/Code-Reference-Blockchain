@@ -30,7 +30,7 @@ Blockchain Fundamentals
                 - Number used once
                 - Random number that will give valid hash
             - Mine
-                - What is correct Nonce that will give you valid hash that is less than the required target?
+                - What is correct nonce that will give you valid hash that is less than the required target?
         g. How Block Hashes work in a Blockchain
             - Any change made early in a block of the Blockchain invalidates the rest of the chain 
             - To validate new Blockchain, anyone would need 51% of computing power that allowed for ten minute solving
@@ -55,11 +55,22 @@ Blockchain Fundamentals
             - Reward is BTC and transaction fees
     3. Key Concepts in Bitcoin
         a. Peer-to-Peer network, disintermediated, no 3rd party
-        b. 
-    4. Value of Blockchain
-    5. Common Misconception
-    6. Getting Started
-    7. Resources
+        b. Distributed, workload is spread across all peer computers
+        c. Decentralized, no central control, repository, or management
+        d. Trustless, distributed trustless consensus
+    4. Birth of Bitcoin
+        a. Bitcoin: A Peer to Peer Electronic Cash System - October 31st, 2008, Satoshi Nakamoto
+        b. Other attempst
+            - New Directions in Cryptography, mutual distributed ledgers
+            - Ecash
+            - Hashcash Proof-of-work
+            - B-money
+            - Bitgold
+    5. Value of Blockchain
+        a. 
+    6. Common Misconception
+    7. Getting Started
+    8. Resources
         a. demoblockchain.org
         b. demoblockchain.org/hash
         c. demoblockchain.org/block
