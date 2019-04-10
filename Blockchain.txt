@@ -175,9 +175,22 @@ Blockchain Fundamentals
                 - Includes input and amount as part of digital signature
                 - Should reduce pressure and transaction fees
     10. Future of Bitcoin Mining
+        a. What happens when there are no more bitcoins left to mine?
+            - Transaction fees will be enough to justify Mining
+        b. Controlled supply of bitcoin
+            - Only 21 million will ever exists
+            - At origin, reward was 50 BTC every ten minutes
+            - The halving, process that stipulates, every 210,000 blocks, value mined is cut in half
+        c. Important Dates in Bitcoin History
+            - October 31st, 2008 Bitcoin Whitepaper
+            - January 3rd, 2009 Genesis Block
+            - May 22nd, 2010 First Retail Purchase, Lazlo
+            - November 28th, 2013, BTC > $1,000
+            - March 2nd, 2017 1 BTC > 1oz of Gold
+    11. Merkle Trees
         a. 
-    11. Getting Started
-    12. Resources
+    12. Getting Started
+    13. Resources
         a. demoblockchain.org
         b. demoblockchain.org/hash
         c. demoblockchain.org/block
