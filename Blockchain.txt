@@ -125,8 +125,23 @@ Blockchain Fundamentals
         f. Scalability
         g. Time to Process, ~10 minutes
     7. Common Misconceptions
-    8. Getting Started
-    9. Resources
+        a. Bitcoin is Anonymous
+            - False, it is pseudonoymous
+            - KYC, Know Your Customer for regular fiat currency
+        b. Bitcoin is used to launder money
+            - False, every transaction is tracked
+            - Not good for criminal activity
+        c. Blockchain is a better database
+            - False, it is a chronological and immutable ledger
+            - No reversals or changes
+        d. Blockchain is bitcoin
+            - False, blockchain is a technology that can be used in many areas
+        e. You need to buy a full bitcoin to started
+            - False, you can get into bitcoin for far less
+    8. Bitcoin Cash
+        a. 
+    9. Getting Started
+    10. Resources
         a. demoblockchain.org
         b. demoblockchain.org/hash
         c. demoblockchain.org/block
