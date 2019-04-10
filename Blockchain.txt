@@ -4,9 +4,70 @@ Blockchain Fundamentals
         b. "A constantly growing ledger, that keeps a permanent record of all the transactions that have taken place, in a secure, chronological, and immutable way."
     2. What is Bitcoin?
         a. Type of digital asset that can be bought, sold, or transferred securely.
-        b. Peer-to-Peer no 3rd party involved
-        c. Bitcoin Network w/ Blockchain (Decentralized Record)
+        b. Peer-to-Peer no 3rd party involved.
+        c. Bitcoin Network w/ Blockchain (Decentralized Record).
+        d. Bitcoin Miners
+            - Role, process and confirm transactions.
+            - Use of powerful computers.
+            - Mining is solving cryptographic math problems.
+            - Rewarded in Bitcoin.
+            - Ultimately build blocks of the blockchain, every ten minutes
+            - Genesis Block January 3rd 2009
+        e. Hash Functions
+            - Cryptographic Hash, digital finger print
+            - SHA256, Secure Hash Algorithm developed by the NSA
+            - One way functions, no way to get source from Hash
+            - Differs from encryption and decryption
+        f. Block
+            - Block Number
+            - Data
+            - Prev Hash
+            - Cryptographic Hash
+                - Four leading 0000 is valid
+                - Tied to difficulty level, how difficult it is to get a hash smaller than the target
+                - Difficulty level changes over time, increases every two weeks dependent on computing        power to average 10 minutes
+            - Nonce
+                - Number used once
+                - Random number that will give valid hash
+            - Mine
+                - What is correct Nonce that will give you valid hash that is less than the required target?
+        g. How Block Hashes work in a Blockchain
+            - Any change made early in a block of the Blockchain invalidates the rest of the chain 
+            - To validate new Blockchain, anyone would need 51% of computing power that allowed for ten minute solving
+        h. How a distributed Blockchain works
+            - A copy of the blockchain exists for each peer in the network
+            - Any changes in a block that aren't validated creates a forking Blockchain
+        i. Four Components of Bitcoin
+            - Software 
+                - defines bitcoin and how it gets transferred
+                - every ten minutes issues cryptography challenge, find the nonce to make the hash valid
+            - Cryptograpy - bitcoin is a cryptocurrency
+            - Hardware - thousands of miner's computers running software
+                - Race to find the solution to the nonce cryptography challenge, billions and trillions of combinations
+                - One person solves the cryptography challenge
+                - Now community has to validate the person's solution
+                - If proof of work, block is valid and added to Blockchain
+                - Miner earns reward of bitcoins
+            - Gaming Theory - bitcoin is a game
+        j. Coinbase Transaction
+            - Every block has the coinbase transactions
+            - Where miner receives the reward for challenge solution
+            - Reward is BTC and transaction fees
     3. Key Concepts in Bitcoin
+        a. Peer-to-Peer network, disintermediated, no 3rd party
+        b. 
     4. Value of Blockchain
     5. Common Misconception
     6. Getting Started
+    7. Resources
+        a. demoblockchain.org
+        b. demoblockchain.org/hash
+        c. demoblockchain.org/block
+        d. demoblockchain.org/blockchain
+        e. demoblockchain.org/distributed
+        f. demoblockchain.org/tokens
+        g. demoblockchain.org/coinbase
+        h. btc.com
+        i. blockchaininformer.com
+        j. blockchain.info
+        k. blockexplorer.com
