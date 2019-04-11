@@ -22,12 +22,26 @@ Ethereum Fundamentals
         e. Metamask Chrome Extension
             - How to connect to Ethereum networks
             - Ethereum Wallet
-            - Networks
+            - Networks, access with single account
                 - Main, Ropsten, Kovan, Rinkeby Tests 
             - Account
                 - Account Address, unique identifier
                 - Public Key, used for transactions
                 - Private Key, used for transactions
+        f. Order of Operations
+            - Click on Submit w/ address
+            - Address sent to BE Server
+            - BE Server uses Web3 library to create a transaction object
+            - BE Server sent transaction object to the network
+            - BE Server waited for transaction to be confirmed
+            - BE Server sent success message back to browser
+        g. Transaction Object
+            - Nonce, how many times the sender has sent a transaction
+            - To, address of receiving account
+            - Value, amount of ether
+            - gasPrice, amount of ether to pay per unit gas
+            - startGas/gasLimi, units of gas this transaction can consume
+            - V/R/S, cryptographic pieces of data used to generate senders account address. Generated from sender's private key
     2. How do we interact with Ethereum?
     3. Tooling, Deployment, Testing of Apps with Ethereum
     4. Building a multi-page app with Ethereum
