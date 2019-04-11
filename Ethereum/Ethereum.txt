@@ -77,6 +77,7 @@ Ethereum Fundamentals
                 - Transactions always return transaction hash
                 - Transaction to a function costs money
                 - Transactions take time to be mined and validated
+                - 
             - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
             - Common Function Types
                 - Public, Anyone can call this function
@@ -86,7 +87,7 @@ Ethereum Fundamentals
                 - Pure Function will not modify or even read the contract's data
                 - Payable, When someone calls this function, they might send ether along
             - Common Types
-                - String, sequence of character
+                - string, sequence of character
                 - bool, true or false
                 - int, integer positive or negative, no decimal
                     - int8, int16, int32, ..., int 256
@@ -94,6 +95,11 @@ Ethereum Fundamentals
                     - uint8, uint16, uint32, ..., uint256
                 - fixed/ufixed, fixed point number, with a decimal
                 - address, methods tied to it for sending money 
+            - Common Reference Types
+                - fixed array, array that contains a single type of element with unchanging length
+                - dynamic array, array that contains a single type of element with a size that can change
+                - mapping, collection of key value pairs, keys and values must be of same type
+                - struct, collection of key value pairs that can have different types 
             - Contract Deployment
                 - External Account to Create Contract Transaction
                     - Nonce
@@ -115,6 +121,12 @@ Ethereum Fundamentals
                     - Takes time to execute
                     - Returns the transaction hash
                     - Costs money
+            - Message Global Variable
+                - Object that describes account creating transaction
+                - msg.data, Data field from teh call or transaction that invoked the current function
+                - msg.gas, Amount of gas the current function invocation has available
+                - msg.sender, Address of the account that started the current function invocation
+                - msg.value, Amount of either (in wei) that was sent along with the function invocation
         c. Remix.ethereum.org
             - Solidity IDE
             - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
