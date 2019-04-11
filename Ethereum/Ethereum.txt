@@ -190,6 +190,9 @@ Ethereum Fundamentals
         i. Truffle HD Wallet
             - Provider to connect to Infura
             - const provider = new HDWalletProvider(mnemonic, networkURL)
+        j. Deployed Contracts on Remix
+            - Environment = Injected Web3 w/ Wallet Account
+            - At Address = Contract Address
     4. Tooling, Deployment, Testing of Apps with Ethereum
     5. Building a multi-page app with Ethereum
     6. Resources
@@ -204,3 +207,4 @@ Ethereum Fundamentals
         i. www.npmjs.com/package/ganache-cli
         j. web3js.readthedocs.io/en/1.0/
         k. infura.io/docs
+        l. rinkeby.etherscan.io
