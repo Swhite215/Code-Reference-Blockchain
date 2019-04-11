@@ -94,6 +94,7 @@ Ethereum Fundamentals
                     - gasPrice, amount of wei the sender is willing to pay per unit gas
                     - startGas/gasLimit, units of gas that this transaction can consume
                     - V/R/S, cryptographic pieces of data used to generate sender's account address
+                - Contract Source -> Compiler -> ABI / Contract Bytecode -> Rinkeby
             - To Change anyting on the Blockchain = Submit a Transaction -> Mining POW
             - Running Contract Functions
                 - Calling a Function
@@ -123,9 +124,28 @@ Ethereum Fundamentals
             - startGas/gasLimit
                 - Units of gas that this transaction can consume
             - if gas used > startGas/gasLimit then execution halts
-    3. Tooling, Deployment, Testing of Apps with Ethereum
-    4. Building a multi-page app with Ethereum
-    5. Resources
+        f. Mnemonic Phrases
+            - Twelve Word Mnemonic -> BIP39 Mnemonic Algorithm -> Series of Accounts
+    3. Smart Contracts with Solidity
+        a. Truffle
+            - Contract Creation -> Local Testing -> Deployment
+            - Issues...  
+        b. Custom Node Project
+            - Contract Creation -> Local Testing -> Deployment
+        c. Boilerplate Requirements
+            - Issue - Able to write Solidity that is then accesssed by JavaScript
+                - Solution - Set up the Solidity Compiler
+            - Issue - Need a way to rapidly test contracts without doing the manual testing
+                - Solution - Set up a custom Mocha test runner that can test Solidity code
+            - Issue - Need some way to deploy our contract to public networks
+                - Solution - Set up a deploy script to compile and deploy our contract
+    4. Tooling, Deployment, Testing of Apps with Ethereum
+    5. Building a multi-page app with Ethereum
+    6. Resources
         a. etherscan.io/chart/blocktime
         b. remix.ethereum.org
         c. etherconverter.online
+        d. iancoleman.io/bip39
+        e. rinkeby-faucet.com
+        f. faucet.rinkeby.io
+        g. truffleframework.com/
