@@ -16,3 +16,9 @@ beforeEach(async function() {
         .deploy({ data: bytecode })
         .send({ from: accounts[0], gas: "1000000" });
 });
+
+describe("Lottery", function() {
+    it("deploys a contract", function() {
+        assert.ok(lottery.options.address);
+    });
+});
