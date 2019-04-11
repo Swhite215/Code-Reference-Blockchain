@@ -145,7 +145,11 @@ Ethereum Fundamentals
                 - address.transfer(wei), take money from contract and send to address
                 - addres.transfer(this.balance)
             - Resetting Contract State
-                -
+                - send money, clear array = new type[](0)
+            - Function Modifiers
+                - modifier name() { _; // where code is replaced}
+                - reduces code that we have to write
+                - function name() view modifier {}
         c. Remix.ethereum.org
             - Solidity IDE
             - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
