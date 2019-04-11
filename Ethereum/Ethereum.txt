@@ -155,9 +155,31 @@ Ethereum Fundamentals
         f. Testing
             - Solitiy Compiler -> Bytecode -> Deploy Local Test Network -> Test Contract
             - Mocha, describe, it, beforeEach
+            - Order
+                - Mocha Starts
+                - beforeEach = Deploy a new contract instance, created through a transaction from external account
+                - Manipulate the contract
+                - Make an assertion about the contract
         g. Web3
             - Constructor creates instance
             - Set up Provider, communication layer between Web3 and some network
+            - Most methods are asynchronous in nature
+            - Commands
+                - web3.eth.getAccounts(), returns list of accounts
+                - new web3.eth.Contract(JSON.parse(interface)), creates a new contract
+                - .deploy({ data: bytecode, arguments: [Initial Values]}), deploys bytecode with arguments
+                - .send({ from: accounts[0],gas: Value}), sends out a transaction that creates this contract
+            - Deployment
+                - Create a contract with an interface -> deploy with bytecode and initial information ->send from account with gas
+            - Contract Access
+                - Use interace -> create transaction to address
+            - Deployed Contract
+                - Object of type Contract
+                - Provider = Communication Layer
+                - Request Manager, facilitates communication
+                - Providers, WebSockets, HTTP, or Inter Process Communication
+                - Methods, contract methods to interact with
+                - Options, information about contract like address, interface, data, from, gasPrice, and gas 
     4. Tooling, Deployment, Testing of Apps with Ethereum
     5. Building a multi-page app with Ethereum
     6. Resources
