@@ -30,8 +30,17 @@ describe("Inbox", function() {
     assert.ok(inbox.options.address); //Checks there is an existing address
   });
 
+  //Example test where a method is being called
   it("has a default message", async function() {
     let message = await inbox.methods.message().call();
     assert.equal(message, "Hi there!");
+  });
+
+  //Example test where a transaction is being sent
+  it("can change the message", async function() {
+    await inbox.methods.setMessage("New Message").send({ from: accounts[0] });
+    let message = await inbox.methods.message().call();
+
+    assert.equal(message, "New Message");
   });
 });
