@@ -85,6 +85,15 @@ Ethereum Fundamentals
                 - Constant, Function returns data and does not modify contract's data, use RETURNS
                 - Pure Function will not modify or even read the contract's data
                 - Payable, When someone calls this function, they might send ether along
+            - Common Types
+                - String, sequence of character
+                - bool, true or false
+                - int, integer positive or negative, no decimal
+                    - int8, int16, int32, ..., int 256
+                - uint, unsigned integer, positive number, no decimal
+                    - uint8, uint16, uint32, ..., uint256
+                - fixed/ufixed, fixed point number, with a decimal
+                - address, methods tied to it for sending money 
             - Contract Deployment
                 - External Account to Create Contract Transaction
                     - Nonce
@@ -194,6 +203,19 @@ Ethereum Fundamentals
             - Environment = Injected Web3 w/ Wallet Account
             - At Address = Contract Address
     4. Tooling, Deployment, Testing of Apps with Ethereum
+        a. Inbox Contract
+            - Variables
+                - Message, example storage variable
+            - Functions
+                - Default getter for message
+                - setMessage, sets message on contract
+        b. Lottery Contract
+            - Variables
+                - Manager, address of person who created the contract
+                - Players, array of addresses of people who entered
+            - Functions
+                - Enter, enters a playeer into the Lottery
+                - pickWInner, Randomly picks a winner and sends them the prize pool
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
