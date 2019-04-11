@@ -73,6 +73,10 @@ Ethereum Fundamentals
             - Similar to JavaScritp
             - Gotchas
                 - Whenever you define a storage variable as public, a function with that variable name will be created that returns that variable value
+                - All transactions take time to process
+                - Transactions always return transaction hash
+                - Transaction to a function costs money
+                - Transactions take time to be mined and validated
             - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
             - Common Function Types
                 - Public, Anyone can call this function
@@ -81,6 +85,26 @@ Ethereum Fundamentals
                 - Constant, Function returns data and does not modify contract's data, use RETURNS
                 - Pure Function will not modify or even read the contract's data
                 - Payable, When someone calls this function, they might send ether along
+            - Contract Deployment
+                - External Account to Create Contract Transaction
+                    - Nonce
+                    - To, NOTHING/BLANK = Contract
+                    - Data, compiled bytecode of the contract
+                    - Value, amount of wei to send to the target address
+                    - gasPrice, amount of wei the sender is willing to pay per unit gas
+                    - startGas/gasLimit, units of gas that this transaction can consume
+                    - V/R/S, cryptographic pieces of data used to generate sender's account address
+            - To Change anyting on the Blockchain = Submit a Transaction -> Mining POW
+            - Running Contract Functions
+                - Calling a Function
+                    - Cannot modify the contract's data
+                    - Can return data
+                    - Returns instantly with no cost
+                - Sending a Transaction to a Function
+                    - Can modify a contract's data
+                    - Takes time to execute
+                    - Returns the transaction hash
+                    - Costs money
         c. Remix.ethereum.org
             - Solidity IDE
             - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
@@ -90,9 +114,13 @@ Ethereum Fundamentals
             - Value, 
             - Contract to Deploy
             - Deployed Contracts
-        d. 
+        d. Wei vs. Ether
+            - 1 Ether = 1,000,000,000,000,000,000 Wei
+        e. Gas and Transactions
+            - Meant to measure how much work is being executed by code
     3. Tooling, Deployment, Testing of Apps with Ethereum
     4. Building a multi-page app with Ethereum
     5. Resources
         a. etherscan.io/chart/blocktime
         b. remix.ethereum.org
+        c. etherconverter.online
