@@ -4,7 +4,8 @@ const Web3 = require("web3"); //Constructor Function = Capital
 const { interface, bytecode } = require("../compile"); //Deconstruct interface and bytecode from compiled contract
 
 //Set up instance of Web3 with Ganache network provider
-const web3 = new Web3(ganache.provider());
+const provider = ganache.provider();
+const web3 = new Web3(provider);
 
 //Test Preparation
 let accounts;
@@ -18,11 +19,19 @@ beforeEach(async () => {
   inbox = await new web3.eth.Contract(JSON.parse(interface))
     .deploy({ data: bytecode, arguments: ["Hi there!"] })
     .send({ from: accounts[0], gas: "1000000" });
+
+  //Add Provider to Inbox
+  inbox.setProvider(provider);
 });
 
 //Testing
 describe("Inbox", function() {
   it("deploys a contract", () => {
-    console.log(inbox);
+    assert.ok(inbox.options.address); //Checks there is an existing address
+  });
+
+  it("has a default message", async function() {
+    let message = await inbox.methods.message().call();
+    assert.equal(message, "Hi there!");
   });
 });
