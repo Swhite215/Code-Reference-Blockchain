@@ -147,6 +147,8 @@ Ethereum Fundamentals
                 - Web3 Versioning
                     - v0.x.x = Primitive interface, only callbacks for async-code
                     - v1.x.x = Support for promises + async/await
+            - Infura API
+            - npm install --save truffle-hdwallet-provider
         e. Compiling
             - Returns object with contracts property with contract objects
             - Each contract object has:
@@ -179,7 +181,15 @@ Ethereum Fundamentals
                 - Request Manager, facilitates communication
                 - Providers, WebSockets, HTTP, or Inter Process Communication
                 - Methods, contract methods to interact with
+                    - contract.methods.method(parameters).call()
+                    - contract.methods.method(parameters).send()
                 - Options, information about contract like address, interface, data, from, gasPrice, and gas 
+        h. Infura
+            - Web3 Instance -> Provider w/ Account w/ Ether (Accout Mnemonic) -> Infura Node/Portal to Rinkeby
+            - Create Account -> Create a Project -> Get API Endpoint
+        i. Truffle HD Wallet
+            - Provider to connect to Infura
+            - const provider = new HDWalletProvider(mnemonic, networkURL)
     4. Tooling, Deployment, Testing of Apps with Ethereum
     5. Building a multi-page app with Ethereum
     6. Resources
@@ -193,3 +203,4 @@ Ethereum Fundamentals
         h. www.npmjs.com/package/solc
         i. www.npmjs.com/package/ganache-cli
         j. web3js.readthedocs.io/en/1.0/
+        k. infura.io/docs
