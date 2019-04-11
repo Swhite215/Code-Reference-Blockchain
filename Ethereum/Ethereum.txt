@@ -72,8 +72,27 @@ Ethereum Fundamentals
             - Strongly typed
             - Similar to JavaScritp
             - Gotchas
+                - Whenever you define a storage variable as public, a function with that variable name will be created that returns that variable value
             - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
+            - Common Function Types
+                - Public, Anyone can call this function
+                - Private, Only this contract can call this function
+                - View, Function returns data and does not modify contract's data, use RETURNS
+                - Constant, Function returns data and does not modify contract's data, use RETURNS
+                - Pure Function will not modify or even read the contract's data
+                - Payable, When someone calls this function, they might send ether along
+        c. Remix.ethereum.org
+            - Solidity IDE
+            - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
+            - Environment, JavaScript VM
+            - Account, Automatic Accounts w/ 100 ether
+            - Gas Limit,
+            - Value, 
+            - Contract to Deploy
+            - Deployed Contracts
+        d. 
     3. Tooling, Deployment, Testing of Apps with Ethereum
     4. Building a multi-page app with Ethereum
     5. Resources
         a. etherscan.io/chart/blocktime
+        b. remix.ethereum.org
