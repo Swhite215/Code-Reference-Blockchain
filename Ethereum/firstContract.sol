@@ -17,5 +17,13 @@ contract Inbox { //Definition of contract class
     function getMessage() public view returns (string) {
         return message;
     }
+
+    //Function to test gas
+    function doMath(int a, int b) {
+        a + b; // 3 Gas
+        b - a; // 3 Gas
+        a * b; // 5 Gas
+        a === 0; // 3 Gas
+    }
 }
 
