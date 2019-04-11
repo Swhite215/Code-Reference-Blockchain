@@ -139,6 +139,25 @@ Ethereum Fundamentals
                 - Solution - Set up a custom Mocha test runner that can test Solidity code
             - Issue - Need some way to deploy our contract to public networks
                 - Solution - Set up a deploy script to compile and deploy our contract
+        d. Necesary Resources
+            - npm install --save solc
+            - npm install --save ganache-cli
+            - npm install --save mocha
+            - npm install --save web3@1.0.0-beta.35
+                - Web3 Versioning
+                    - v0.x.x = Primitive interface, only callbacks for async-code
+                    - v1.x.x = Support for promises + async/await
+        e. Compiling
+            - Returns object with contracts property with contract objects
+            - Each contract object has:
+                - Bytecode property that will be deployed
+                - Interface, contract ABI that lists all functions, arguments, and return values
+        f. Testing
+            - Solitiy Compiler -> Bytecode -> Deploy Local Test Network -> Test Contract
+            - Mocha, describe, it, beforeEach
+        g. Web3
+            - Constructor creates instance
+            - Set up Provider, communication layer between Web3 and some network
     4. Tooling, Deployment, Testing of Apps with Ethereum
     5. Building a multi-page app with Ethereum
     6. Resources
@@ -149,3 +168,6 @@ Ethereum Fundamentals
         e. rinkeby-faucet.com
         f. faucet.rinkeby.io
         g. truffleframework.com/
+        h. www.npmjs.com/package/solc
+        i. www.npmjs.com/package/ganache-cli
+        j. web3js.readthedocs.io/en/1.0/
