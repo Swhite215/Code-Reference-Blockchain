@@ -33,6 +33,7 @@ Ethereum Fundamentals
             - Address sent to BE Server
             - BE Server uses Web3 library to create a transaction object
             - BE Server sent transaction object to the network
+                - Specific node, block is created, mining occurs
             - BE Server waited for transaction to be confirmed
             - BE Server sent success message back to browser
         g. Transaction Object
@@ -40,8 +41,39 @@ Ethereum Fundamentals
             - To, address of receiving account
             - Value, amount of ether
             - gasPrice, amount of ether to pay per unit gas
-            - startGas/gasLimi, units of gas this transaction can consume
+            - startGas/gasLimit, units of gas this transaction can consume
             - V/R/S, cryptographic pieces of data used to generate senders account address. Generated from sender's private key
+        h. Basic Blockchains
+            - SHA256 Hash, crytographic identifier
+            - Block
+                - Number
+                - Nonce, number used to try to figure out target hash
+                - Data
+                - Hash
+                - Transaction List
+                - Coinbase transaction, reward for mining, UTXO
+            - Blockchain
+                - Series of blocks, connected through previous hash value
+            - Block Time, time to find a solution, around 10 minutes and difficulty increases to maintain average
+            - Ethereum network Block Time = 15 seconds
+        k. External Account
+            - An account an entity owns
     2. How do we interact with Ethereum?
+        a. Smart Contract
+            - An account controlled by code
+            - Field, description
+            - Balance, amount of ether this account owns
+            - Storage, data storage for this contract
+            - Code, raw machine code for this contract
+            - Contract accounts are specific to one network
+            - Contract Source Code deployed as instances on network
+        b. Solidity
+            - Written in .sol files
+            - Strongly typed
+            - Similar to JavaScritp
+            - Gotchas
+            - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
     3. Tooling, Deployment, Testing of Apps with Ethereum
     4. Building a multi-page app with Ethereum
+    5. Resources
+        a. etherscan.io/chart/blocktime
