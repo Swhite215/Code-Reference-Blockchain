@@ -117,7 +117,12 @@ Ethereum Fundamentals
         d. Wei vs. Ether
             - 1 Ether = 1,000,000,000,000,000,000 Wei
         e. Gas and Transactions
-            - Meant to measure how much work is being executed by code
+            - Meant to measure how much work is being done by executed code
+            - gasPrice
+                - amount of wei the sender is willing to pay per unit gas to get this transaction processed
+            - startGas/gasLimit
+                - Units of gas that this transaction can consume
+            - if gas used > startGas/gasLimit then execution halts
     3. Tooling, Deployment, Testing of Apps with Ethereum
     4. Building a multi-page app with Ethereum
     5. Resources
