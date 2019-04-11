@@ -1,0 +1,33 @@
+Ethereum Fundamentals
+    1. What is Ethereum?
+        a. History
+            - October 31, 2008 - Bitcoin Whitepaper by Satoshi Nakamoto
+            - December 2013 - Ethereum Whitepape by Vitalik Buterin
+            - July 30th, 2015 - Ethereum goes online
+        b. Smart Contract
+            - Code that lives in the Ethereum Blockchain
+            - Can be communicated with using messages
+            - Allows for the creation of advanced systems
+        c. Ethereum Network
+            - Used to transfer money and store data
+            - Many different types of networks
+            - Formed by one or more nodes
+            - Each node is a machine running an ethereum client
+            - Anyone can run a node
+            - Each node can contain a full copy of the blockchain
+            - Blockchain is a ledger that stores a record of every transaction that has ever taken place
+        d. Connecting to the networks
+            - Developer tecnology to create applications, web3.js
+            - Consumer technology, Metamask and Mist Browser
+        e. Metamask Chrome Extension
+            - How to connect to Ethereum networks
+            - Ethereum Wallet
+            - Networks
+                - Main, Ropsten, Kovan, Rinkeby Tests 
+            - Account
+                - Account Address, unique identifier
+                - Public Key, used for transactions
+                - Private Key, used for transactions
+    2. How do we interact with Ethereum?
+    3. Tooling, Deployment, Testing of Apps with Ethereum
+    4. Building a multi-page app with Ethereum
