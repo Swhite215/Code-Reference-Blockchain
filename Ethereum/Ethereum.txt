@@ -77,7 +77,11 @@ Ethereum Fundamentals
                 - Transactions always return transaction hash
                 - Transaction to a function costs money
                 - Transactions take time to be mined and validated
-                - 
+                - Array default function doesn't return entire array
+                - Solidity allows nested dynamic arrays... however this is not translatable to ABI/JS/Web3
+                - Strings in solidity are considered dynamic arrays...
+                - Errors are not clearly communicated back when using require
+                - No random number generator
             - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
             - Common Function Types
                 - Public, Anyone can call this function
@@ -127,6 +131,21 @@ Ethereum Fundamentals
                 - msg.gas, Amount of gas the current function invocation has available
                 - msg.sender, Address of the account that started the current function invocation
                 - msg.value, Amount of either (in wei) that was sent along with the function invocation
+            - Require Global Function 
+                - Used for validation
+                - num ether converts to wei
+                - require(boolean expression)
+            - Sha3 Global Function or keccak256
+                - sha3(parameters)
+            - Block Global Variable
+                - block.difficulty
+            - Now Global Variable
+                - current time
+            - Sending Ether
+                - address.transfer(wei), take money from contract and send to address
+                - addres.transfer(this.balance)
+            - Resetting Contract State
+                -
         c. Remix.ethereum.org
             - Solidity IDE
             - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
@@ -136,6 +155,8 @@ Ethereum Fundamentals
             - Value, 
             - Contract to Deploy
             - Deployed Contracts
+            - Debugger
+                - Step through expression by expression
         d. Wei vs. Ether
             - 1 Ether = 1,000,000,000,000,000,000 Wei
         e. Gas and Transactions
@@ -226,7 +247,7 @@ Ethereum Fundamentals
                 - Manager, address of person who created the contract
                 - Players, array of addresses of people who entered
             - Functions
-                - Enter, enters a playeer into the Lottery
+                - Enter, enters a player into the Lottery
                 - pickWInner, Randomly picks a winner and sends them the prize pool
     5. Building a multi-page app with Ethereum
     6. Resources
