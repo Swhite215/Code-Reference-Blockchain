@@ -82,6 +82,8 @@ Ethereum Fundamentals
                 - Strings in solidity are considered dynamic arrays...
                 - Errors are not clearly communicated back when using require
                 - No random number generator
+                - Issues with Arrays
+                    - Consumes gas hungrily, solution is mapping
             - Contract Definition -> Solidity Compiler -> Byte Code / Application Binary Interface
             - Common Function Types
                 - Public, Anyone can call this function
@@ -150,6 +152,14 @@ Ethereum Fundamentals
                 - modifier name() { _; // where code is replaced}
                 - reduces code that we have to write
                 - function name() view modifier {}
+            - Search Time
+                - Array -> Linear Time Search
+                - Mapping -> Constant Time Search
+            - Mappings
+                - Keys are not stored
+                - Hash table w/ Lookup process
+                - Values not iterable
+                - All values exist
         c. Remix.ethereum.org
             - Solidity IDE
             - Remix Editor w/Contract Source -> Compile to Byte -> In-Browser Fake Network
