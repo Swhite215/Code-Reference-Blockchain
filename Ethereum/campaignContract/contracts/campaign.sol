@@ -64,10 +64,10 @@ contract Campaign {
     function finalizeRequest(uint index) public restricted {
         Request storage request = requests[index]; //Grab specific request
         require(!request.complete);//Make sure requests is not complete
-        require(request.approvalCount > approversCount / 2); //Make sure half of approvers approve the request
-        request.complete = true; //Mark the requests as complete
-        
+        require(request.approvalCount > (approversCount / 2)); //Make sure half of approvers approve the request
+       
         request.recipient.transfer(request.value); //Send to the recipient the value of the request
+        request.complete = true; //Mark the requests as complete
     }
     
     
