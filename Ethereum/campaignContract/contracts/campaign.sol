@@ -1,5 +1,20 @@
 pragma solidity ^0.4.17; //Specifies version of Solidity
 
+contract CampaignFactory {
+    address[] public deployedCampaigns;
+    
+    //createCampaign method, creates and deploys a new campaign contract
+    function createCampaign(uint minimum) public {
+        address newCampaign = new Campaign(minimum, msg.sender);
+        deployedCampaigns.push(newCampaign);
+    }
+    
+    //getDeployedCampaigns method, returns list of all deployed campaigns
+    function getDeployedCampaigns() public view returns (address[]) {
+        return deployedCampaigns;
+    }
+}
+
 contract Campaign {
     //Struct - Definitions
     struct Request {
@@ -25,8 +40,8 @@ contract Campaign {
     }
     
     //constructor, save the contract creator as the manager
-    function Campaign(uint minimum) public {
-        manager = msg.sender;
+    function Campaign(uint minimum, address creator) public {
+        manager = creator;
         minimumContribution = minimum;
     }
     
