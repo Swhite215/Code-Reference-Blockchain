@@ -217,6 +217,7 @@ Ethereum Fundamentals
                 - new web3.eth.Contract(JSON.parse(interface)), creates a new contract
                 - .deploy({ data: bytecode, arguments: [Initial Values]}), deploys bytecode with arguments
                 - .send({ from: accounts[0],gas: Value}), sends out a transaction that creates this contract
+                - web3.eth.getBalance(address);
             - Deployment
                 - Create a contract with an interface -> deploy with bytecode and initial information ->send from account with gas
             - Contract Access
@@ -253,6 +254,10 @@ Ethereum Fundamentals
             - Functions
                 - Enter, enters a player into the Lottery
                 - pickWInner, Randomly picks a winner and sends them the prize pool
+            - App Architecture
+                - Regular, UI -> Server -> Database
+                - Ethereum, UI -> Server <- HTML
+                    - Contract Request -> Web3 w/ Metamask (Public + Private Keys) -> Ethereum Network
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
