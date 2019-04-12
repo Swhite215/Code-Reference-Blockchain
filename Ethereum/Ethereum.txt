@@ -289,6 +289,15 @@ Ethereum Fundamentals
                 - recipient: address, address that the money will be sent to
                 - complete: bool, true if the request has already been processed (money sent)
                 - ???:???, voting mechanism
+                - Struct newStruct = Struct({
+                    struct properties
+                  });
+            - Storage vs. Memory
+                - Where contract stores data
+                    - Storage, holds data between function calls
+                    - Memory, temporary place to store data 
+                    - Arrays are copied when passed as a parameter, unless indicated as storage
+                - How solidity variables store values
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
