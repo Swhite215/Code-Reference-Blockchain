@@ -264,6 +264,11 @@ Ethereum Fundamentals
                     - Hijack Provider of MetaMask Web3 Library
                     - const web3 = new Web3(window.ethereum);
                     - New metamask breaking change, Dapps should auth with window.ethereum.enable()
+            - Contract Access Protocol
+                - Component Renders
+                - ComponentDidMount
+                - Call methods on contract
+                - Set data on state
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
