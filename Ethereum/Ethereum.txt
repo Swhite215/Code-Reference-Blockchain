@@ -345,6 +345,14 @@ Ethereum Fundamentals
                     - Read 'campaign.sol' from the contracts folder
                     - Compile both contracts with solidity compiler
                     - Write output to the 'build' directory
+            - Paths/Pages
+                - /, list of campaigns
+                - /campaigns/new, form to make a new campaign
+                - /campaigns/address, campaign details for campaign at address
+                - /campaigns/address/requests, show requests for campaign
+                - /campaigns/address/requests/new, form to create a request for campaign at address
+            - Tech Stack
+                - Next, Server Side React Rendering
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
