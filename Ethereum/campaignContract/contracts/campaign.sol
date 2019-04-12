@@ -16,6 +16,7 @@ contract Campaign {
     uint public minimumContribution;
     mapping(address => bool) public approvers;
     Request[] public requests;
+    uint public approversCount;
     
     //Modifiers
     modifier restricted() {
@@ -33,6 +34,7 @@ contract Campaign {
     function contribute() public payable {
         require(msg.value >= minimumContribution);
         approvers[msg.sender] = true;
+        approversCount++;
     }
     
     //createRequest method, creates request struct and adds it to request array
@@ -48,15 +50,24 @@ contract Campaign {
         requests.push(newRequest);
     }
     
-    //approveRequest method
+    //approveRequest method, approves a specific request if user is approver
     function approveRequest(uint index) public {
-        Request storage request = requests[index];
+        Request storage request = requests[index]; //Grab specific request
         require(approvers[msg.sender]); //Check person is a donator
         require(!request.approvals[msg.sender]); //Check person has not voted
         
         request.approvalCount++; //Increment the number of approved votes
         request.approvals[msg.sender] = true; //Make sure person is counted as having voted
+    }
+    
+    //finalizeRequest method, confirms approving request and sends money
+    function finalizeRequest(uint index) public restricted {
+        Request storage request = requests[index]; //Grab specific request
+        require(!request.complete);//Make sure requests is not complete
+        require(request.approvalCount > approversCount / 2); //Make sure half of approvers approve the request
+        request.complete = true; //Mark the requests as complete
         
+        request.recipient.transfer(request.value); //Send to the recipient the value of the request
     }
     
     
