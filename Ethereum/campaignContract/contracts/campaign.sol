@@ -12,7 +12,7 @@ contract Campaign {
     //Variables
     address public manager;
     uint public minimumContribution;
-    address[] public approvers;
+    mapping(address => bool) public approvers;
     Request[] public requests;
     
     //Modifiers
@@ -30,7 +30,7 @@ contract Campaign {
     //contribute method, payable, require contribution, add to approvers
     function contribute() public payable {
         require(msg.value >= minimumContribution);
-        approvers.push(msg.sender);
+        approvers[msg.sender] = true;
     }
     
     //createRequest method, creates request struct and adds it to request array
@@ -44,4 +44,6 @@ contract Campaign {
         
         requests.push(newRequest);
     }
+    
+    
 }
