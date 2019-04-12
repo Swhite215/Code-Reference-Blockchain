@@ -21,4 +21,38 @@ describe("Lottery", function() {
     it("deploys a contract", function() {
         assert.ok(lottery.options.address);
     });
+
+    it("allows one account to enter", async function() {
+        await lottery.methods.enter().send({
+            from: accounts[0],
+            value: web3.utils.toWei(".02", "ether")
+        });
+
+        const players = await lottery.methods
+            .getPlayers()
+            .call({ from: accounts[0] });
+
+        assert.equal(1, players.length);
+        assert.equal(accounts[0], players[0]);
+    });
+
+    it("allows multiple accounts to enter", async function() {
+        await lottery.methods.enter().send({
+            from: accounts[0],
+            value: web3.utils.toWei(".02", "ether")
+        });
+
+        await lottery.methods.enter().send({
+            from: accounts[1],
+            value: web3.utils.toWei(".02", "ether")
+        });
+
+        const players = await lottery.methods
+            .getPlayers()
+            .call({ from: accounts[0] });
+
+        assert.equal(2, players.length);
+        assert.equal(accounts[0], players[0]);
+        assert.equal(accounts[1], players[1]);
+    });
 });
