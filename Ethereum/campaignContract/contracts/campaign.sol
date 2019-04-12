@@ -48,5 +48,16 @@ contract Campaign {
         requests.push(newRequest);
     }
     
+    //approveRequest method
+    function approveRequest(uint index) public {
+        Request storage request = requests[index];
+        require(approvers[msg.sender]); //Check person is a donator
+        require(!request.approvals[msg.sender]); //Check person has not voted
+        
+        request.approvalCount++; //Increment the number of approved votes
+        request.approvals[msg.sender] = true; //Make sure person is counted as having voted
+        
+    }
+    
     
 }
