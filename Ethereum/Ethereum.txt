@@ -300,7 +300,7 @@ Ethereum Fundamentals
                 - complete: bool, true if the request has already been processed (money sent)
                 - ???:???, voting mechanism
                 - Struct newStruct = Struct({
-                    struct properties
+                    struct value properties, NOT reference
                   });
             - Storage vs. Memory
                 - Where contract stores data
@@ -308,6 +308,36 @@ Ethereum Fundamentals
                     - Memory, temporary place to store data 
                     - Arrays are copied when passed as a parameter, unless indicated as storage
                 - How solidity variables store values
+            - Front-End
+                - Support for multiple campaigns (multiple contracts)
+                - Always deploying an instance of the contract to the Rinkeby network, each with a unique address
+                - Option #1
+                    - Click on Create Campaign
+                    - Send user contract code
+                    - User deploys contract, gets address back
+                    - User sends us address of newly deployed campaign
+                    - User sends us address, we publish new address on our site
+                    - ISSUE: Possible for user to manipulate contract during deployment
+                - Option #2
+                    - Click on Create Campaign
+                    - We deploy a new campaign, get address back
+                    - We publish new campaign on the site
+                    - ISSUE: We are now the managers of all campaigns..., we pay all the costs
+                - Option #3
+                    - Create a factory contract with a function to deploy a new instance of 'Campaign'
+                    - Click on Create Campaign
+                    - Instruct Web3/MetaMask to show user a transaction that invokes 'Campaign Factory'
+                    - User pays deployment costs. Factory deploys a copy of 'Campaign'
+                    - We tell 'Campaign Factory' to give us a list of all deployed campaigns
+                    - Order
+                        - We: Write and deploy Contract Factory
+                        - User: Sends transaction to factory w/ money for deployment -> deploys new campaign contract -> factory collects addresses
+            - Campaign Factory
+                - Variables
+                    - deployedCampaigns, addressed of all deployed campaigns
+                - Functions
+                    - createCampaign, deploys a new instance of a campaign and stores the resulting address
+                    - getDeployedCampaigns, return a list of all deployed campaigns
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
