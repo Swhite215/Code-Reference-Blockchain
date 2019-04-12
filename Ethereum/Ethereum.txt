@@ -258,6 +258,12 @@ Ethereum Fundamentals
                 - Regular, UI -> Server -> Database
                 - Ethereum, UI -> Server <- HTML
                     - Contract Request -> Web3 w/ Metamask (Public + Private Keys) -> Ethereum Network
+            - Web3 Library on Client Side
+                - 1. Metamask injects Web3 library v0.20 into page -> Provider -> Rinkeby
+                - 2. Our App Web3 Library v1.0 -> Provider -> Rinkeby
+                    - Hijack Provider of MetaMask Web3 Library
+                    - const web3 = new Web3(window.ethereum);
+                    - New metamask breaking change, Dapps should auth with window.ethereum.enable()
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
