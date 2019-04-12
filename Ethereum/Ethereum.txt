@@ -338,6 +338,13 @@ Ethereum Fundamentals
                 - Functions
                     - createCampaign, deploys a new instance of a campaign and stores the resulting address
                     - getDeployedCampaigns, return a list of all deployed campaigns
+            - Compiler
+                - Single file with multiple contracts -> compiler -> compiled contracts -> save in directory
+                - Order
+                    - Delete entire 'build' folder
+                    - Read 'campaign.sol' from the contracts folder
+                    - Compile both contracts with solidity compiler
+                    - Write output to the 'build' directory
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
