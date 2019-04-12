@@ -283,7 +283,12 @@ Ethereum Fundamentals
                 - createRequest, called by the manager to create a new 'spending request'
                 - approveRequest, called by each contributor to approve a spending request
                 - finalizeRequest, after a request has gotten enough approvals, the manager can call this to get money to send to the vendor
-            - Architecture
+            - Request Struct, each time a request is created
+                - description: string, descrbes why the request is being created
+                - value: uint, amount of money the manager wants to send to the vendor
+                - recipient: address, address that the money will be sent to
+                - complete: bool, true if the request has already been processed (money sent)
+                - ???:???, voting mechanism
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
