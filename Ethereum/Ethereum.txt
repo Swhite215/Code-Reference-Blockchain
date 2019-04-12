@@ -267,7 +267,9 @@ Ethereum Fundamentals
             - Contract Access Protocol
                 - Component Renders
                 - ComponentDidMount
-                - Call methods on contract
+                - Call or Send methods on contract
+                    - contract.methods.method().send({ from: address});
+                    - contract.methods.method().call({ from: address});
                 - Set data on state
     5. Building a multi-page app with Ethereum
     6. Resources
