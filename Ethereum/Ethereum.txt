@@ -351,18 +351,23 @@ Ethereum Fundamentals
                 - /campaigns/address, campaign details for campaign at address
                 - /campaigns/address/requests, show requests for campaign
                 - /campaigns/address/requests/new, form to create a request for campaign at address
+                - nested routing requires additional folders within pages folder
             - Tech Stack
                 - Next, Server Side React Rendering
+                - Semantic UI React, UI Library
             - Getting Campaign List
                 - Configure Web3 with a provider from MetaMask
                 - Tell Web3 that a deplyed Campaign Factory exists
-                - Use Factory instance to retrieve list of deployed campaigns
+                - Use Factory instance to retrieve list of deployed campaigns, within Next.js getInitialProps
                 - Use React to show something about each campaign
             - Window is Undefined
                 - Create-React-App serves directly to the browser
                 - Next.js, server-side rendering -> HTML to Browser -> Code to Browser -> React App takes over
                     - Window is not available and undefined
                     - Next Server initialize values with Ethereum Network
+            - Reusable Components with Next.js
+                - Create components folder
+                - Create layout.js component, render props.childen
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
