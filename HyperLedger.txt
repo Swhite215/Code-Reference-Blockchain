@@ -77,10 +77,38 @@ HyperLedger Fundamentals
                 - Peers, keep ledgers in sync across network
                 - Ordered, responsible for distribution of transaction
             - Channels, peers connect to receive transactions, independent ledger
-    4. Hyperledger Fabric under the hood
-    5. Case Study: ACME Air
-    6. Composer Modeling
-    7. Composer SDK/API
-    8. Develop a Network App
-    9. Resources
+    4. Hyperledger Fabric Composer
+        a. What is composer?
+            - Open development tool set to create and manage business network applications
+            - Accelerates developents of application on blockchain technology
+        b. Benefits
+            - reduced time to value
+            - hides complexity
+            - business modeling
+            - written in JavaScript.
+        c. Toolset
+            - Devs/Architects
+            - Operations
+            - Administrators
+            - Business analysts
+        d. Development Process
+            - Composer Modeling Language Object-Oriented, to define domain model for the buisness network
+            - Developer takes Business Network model and codes Transaction specification
+            - Administrator deploys Business Network Application to execution runtime
+            - Operator uses tools to maintain healt of application
+        e. Execution Runtimes
+            - Blockchain
+            - Playground
+                - Used by business domain experts and developers
+                - Used to create business network model
+                - used for simulated testing
+            - Embedded
+                - Developers can code the business network application and deploy in Node simulator
+                - Used for Test Driven Development and Unit Testing
+    5. Hyperledger Fabric under the hood
+    6. Case Study: ACME Air
+    7. Composer Modeling
+    8. Composer SDK/API
+    9. Develop a Network App
+    10. Resources
         a. hyperledger.org
