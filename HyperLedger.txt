@@ -177,7 +177,8 @@ HyperLedger Fundamentals
         b. Peers
             - Peers need Ledger and certificates
             - Peers receive requests from Client
-            - Orderers send Blocks to Anchor Peers
+            - Anchor
+                - Receives block from Orderers
                 - Anchor Peer updates other Peers
                 - Anchor set up at channel level
                 - An Anchor is discoverable
