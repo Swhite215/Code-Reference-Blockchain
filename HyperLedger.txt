@@ -216,7 +216,28 @@ HyperLedger Fundamentals
             - Client broadcasts the endorsed transaction using Orderer broadcast service
                 - Orderer sends block to Anchor Peers
         e. Membership Service Providers & Certificates of Authority
-            - 
+            - MSP
+                - Abstract component of the system that provides credentials to clients and peers for them to participate in a Hyperledger Fabric network
+                - Authentication, user identities checked for valid certificate
+                - Authorization, actions checked as authorized
+                - Public Key Infrstructure
+                    - Certificates created
+                    - Identity Management
+            - Certification Authority
+                - Trusted party that affirms the identity of an entity by signing the certificate containing the entity's public key
+                - Order
+                    - Requestor sends documents for certificate issuance
+                    - Regiration Authority validates identity
+                    - Certification Authority signs the certificate and notifies validation authority
+                - Hyperledger Fabric
+                    - Root certificate issued to each member of network
+                    - Members can manage identities witin their organizations through own CA
+                    - Fabric CA - Server
+                        - Orderers and Peers validate using API
+                        - REST Server available as well
+                        - Manages identitites & certiicates in database, SQLite
+                    - Fabric CA - Client
+                        - Admin manages certificates 
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
