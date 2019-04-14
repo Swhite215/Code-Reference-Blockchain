@@ -151,6 +151,29 @@ HyperLedger Fundamentals
                     - ./fabricUtil.sh stop
                     - ./fabric.Util.sh start
     6. Hyperledger Fabric Under the Hood
+        a. Ledger Implementation
+            - Transaction Log, tracks transactions againsts assets
+                - immutable
+                - Can create and retrieve, cannot update or delete
+                - levelDB, embedded within peer
+                    - queryable and efficient implementation for creation of data
+                    - Peers write transactions to the leveldb
+            - State Database, current state of assets
+                - Can create, read, update, and delete
+                - Chain Code Execution
+                    - Creates transactions in the transaction log
+                    - Can create CRUD changes in the state data
+                - Key/Value Pairs
+                    - Key = name
+                    - Value = binary blobs of JSON
+                - Update, new version is created for key/value pair
+                - State data is managed in levelDB
+                    - key - all version of values
+                - Access to data is restricted to owner Chaincode
+            - LevelDB
+                - supports simple queries, executed against peer
+            - Business Need Cases
+                - State DB can be filled by LevelDB or CouchDB
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
