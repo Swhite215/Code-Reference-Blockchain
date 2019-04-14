@@ -114,10 +114,49 @@ HyperLedger Fundamentals
             - composer-rest-server -v
         e. npm install -g generator-hyperledger-composer
             - yo --generators
-    6. Hyperledger Fabric under the hood
+        f. Docker
+            - docker -v
+            - env | grep DOCKER_
+        g. Docker Toolbox
+        h. Native vs. Virtual Machine, for setting up Hyperledger Dev Environment
+            - Native, everything needed is installed
+            - Virtual Machine, everything exists on virtual machine
+        i. Virtual Machine Set-up
+            - Virtualization, software simulation of physical hardware made possible with Hypervisor
+            - Oracle Virtual Box or Vagrant
+                - Review Lessons Hyperledger 12 - 27
+        j. Topology - Overview
+            - Configured for a single organization
+            - Four Docker Containers
+                - Certification Authority
+                - Orderer - SOLO
+                - Peer -> CouchDB
+                - Config = Crypto and Config
+            - Config
+                - Channel and Genesis Block
+                - configtxgen tool
+            - Crypto
+                - Certificates and Keys
+                - cryptogen
+            - Utiity Scripts
+                - Launch
+                    - ./startFabric.sh
+                    - kills and removes running containers
+                    - re-deployment is necessary
+                - Shutdown
+                    - ./stopFabric.sh
+                    - kills and removes running containers
+                - Suspend/Restart
+                    - ./startFabric.sh
+                    - ./fabricUtil.sh stop
+                    - ./fabric.Util.sh start
+    6. Hyperledger Fabric Under the Hood
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
+        b. yeoman.org
+        c. curl.haxx.se
+        d. www.cygwin.com
