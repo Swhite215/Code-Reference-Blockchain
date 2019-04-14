@@ -237,7 +237,21 @@ HyperLedger Fundamentals
                         - REST Server available as well
                         - Manages identitites & certiicates in database, SQLite
                     - Fabric CA - Client
-                        - Admin manages certificates 
+                        - Admin manages certificates
+        f. Chaincode Development
+            - Part of Business Network Application
+            - Structure
+                - Asset Definitions, structure or class Definitions
+                - Transaction Definitions and Implementations, code for managing state of the asset, CRUD
+            - Development
+                - Developer writes, compiles, and tests code
+                - Developer deploys chain code to Peers through deploy transaction
+                    - Endorsement policy here
+                - Deployment transaction propogates to the network
+                    - Txn Log + State is updated
+                - Use Fabric API to invoke Chain Code
+                - Each Chaincode has its own container, code is executed within
+            - Execution 
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
