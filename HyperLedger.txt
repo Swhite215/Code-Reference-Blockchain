@@ -292,6 +292,27 @@ HyperLedger Fundamentals
                     - Client-Data
                 - Composer Tool manages cards
                     - list, create, delete, import, export
+        j. Deploying a Network App
+            - CLI Commands Overview (after npm install)
+                - composer --help
+                - composer command --help
+            - Order for Playground
+                - Create a new Business Network Application File
+                    - yo hyperledger-composer
+                - Create an archive
+                    - in /dist, composer archive create -t dir -n ../
+                - Upload to Composer Playground
+            - Order for Hyperledger Fabric
+                - Launch Fabric Network
+                    - ./startFabric.sh
+                - Verify/Create the Peer Admin Card
+                    - ./createPeerAdminCard.sh
+                - Install the network application to fabric
+                    - composer network install -a bnafilename -c cardname
+                - Start BNA on Fabric
+                    - composer network start -c cardname -n network name - v version - A adminstrator - S secret
+                - Import Network Administrator's Card
+                    - composer card import -f filename
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
