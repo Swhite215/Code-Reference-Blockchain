@@ -251,7 +251,14 @@ HyperLedger Fundamentals
                     - Txn Log + State is updated
                 - Use Fabric API to invoke Chain Code
                 - Each Chaincode has its own container, code is executed within
-            - Execution 
+        g. Fabric Composer Playground
+            - Web sandbox application to deploy, test, and edit business network defintions
+            - Order
+                - Define a model
+                - Stored in local storage
+                - Test the model
+                - Export as archive
+                - Deploy an archive
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
@@ -261,3 +268,4 @@ HyperLedger Fundamentals
         b. yeoman.org
         c. curl.haxx.se
         d. www.cygwin.com
+        e. composer-playground.mybluremix.net
