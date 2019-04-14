@@ -259,6 +259,39 @@ HyperLedger Fundamentals
                 - Test the model
                 - Export as archive
                 - Deploy an archive
+        h. Yo Generator
+            - Business Model
+            - Network Application
+            - Angular Web Application
+            - Generate
+                - yo hyperledger-composer
+        i. Business Network Cards
+            - User Roles
+                - Peer Administrator, responsible for activities at the node level
+                - Network Administrator, responsible for activities at the application level
+                - Order
+                    - Peer Admin -> Network Admin -> Participants ~> More Participants
+            - Business Network Card
+                - Credentials
+                - Keys & Certificates
+                - Connection Profile
+                    - information on how to reach CA, Peers, and Orderers
+                - Multiple possible
+                - Managed on user file system
+                    - C:/Users/user/.composer - WINDOW
+                    - /Users/user/.composer - MACOS
+                    - /home/user/.composer - UBUNTU
+                - .composer
+                    - Cards
+                        - CardName@NodeName
+                            - connection.json
+                            - metadata.json
+                            - credentials
+                                - certificate
+                                - privatekey
+                    - Client-Data
+                - Composer Tool manages cards
+                    - list, create, delete, import, export
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
