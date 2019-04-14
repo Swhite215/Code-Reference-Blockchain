@@ -69,7 +69,14 @@ HyperLedger Fundamentals
                 - Even infrastructure components are assigned identity
             - Members can manage identitie within their organization
         g. Nodes and Channels
-            - 
+            - Node connect to other nodes to form the BC network, they use protocol to communicate
+            - Node = communication entity of blockchain, require certificates
+            - Participan w/Certficate -> Use App -> On Node w/Certificate
+            - Types of Nodes
+                - Client, application use for initiating transaction
+                - Peers, keep ledgers in sync across network
+                - Ordered, responsible for distribution of transaction
+            - Channels, peers connect to receive transactions, independent ledger
     4. Hyperledger Fabric under the hood
     5. Case Study: ACME Air
     6. Composer Modeling
