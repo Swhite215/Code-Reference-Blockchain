@@ -174,6 +174,20 @@ HyperLedger Fundamentals
                 - supports simple queries, executed against peer
             - Business Need Cases
                 - State DB can be filled by LevelDB or CouchDB
+        b. Peers
+            - Peers need Ledger and certificates
+            - Peers receive requests from Client
+            - Orderers send Blocks to Anchor Peers
+                - Anchor Peer updates other Peers
+                - Anchor set up at channel level
+                - An Anchor is discoverable
+            - Highly Scalable Architecture
+            - Endorser
+                - Clients send requests to Endorser Peer
+                - Validates the transaction
+                - Simulates the chaincode, executes it
+                - Rejects or Endorses Transaction 
+                - Objective is to protect the network
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
