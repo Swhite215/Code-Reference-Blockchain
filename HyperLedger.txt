@@ -97,7 +97,7 @@ HyperLedger Fundamentals
             - Administrator deploys Business Network Application to execution runtime
             - Operator uses tools to maintain healt of application
         e. Execution Runtimes
-            - Blockchain
+            - Hyperledger Fabric 1x
             - Playground
                 - Used by business domain experts and developers
                 - Used to create business network model
@@ -105,10 +105,19 @@ HyperLedger Fundamentals
             - Embedded
                 - Developers can code the business network application and deploy in Node simulator
                 - Used for Test Driven Development and Unit Testing
-    5. Hyperledger Fabric under the hood
-    6. Case Study: ACME Air
-    7. Composer Modeling
-    8. Composer SDK/API
-    9. Develop a Network App
-    10. Resources
+    5. Development Machine
+        a. Git, Python 2.7.x, Node v.x, Yeoman
+        b. npm install -g composer-cli
+            - composer -v
+        c. node-gyp issues
+        d. npm install -g composer-rest-server
+            - composer-rest-server -v
+        e. npm install -g generator-hyperledger-composer
+            - yo --generators
+    6. Hyperledger Fabric under the hood
+    7. Case Study: ACME Air
+    8. Composer Modeling
+    9. Composer SDK/API
+    10. Develop a Network App
+    11. Resources
         a. hyperledger.org
