@@ -174,9 +174,10 @@ HyperLedger Fundamentals
                 - supports simple queries, executed against peer
             - Business Need Cases
                 - State DB can be filled by LevelDB or CouchDB
-        b. Peers
+        b. Peer Nodes
             - Peers need Ledger and certificates
             - Peers receive requests from Client
+            - Keeps ledger in sync in the network
             - Anchor
                 - Receives block from Orderers
                 - Anchor Peer updates other Peers
@@ -189,6 +190,22 @@ HyperLedger Fundamentals
                 - Simulates the chaincode, executes it
                 - Rejects or Endorses Transaction 
                 - Objective is to protect the network
+            - Checks
+                - Are endorsements valid?
+                - Are there enough endorsments?
+                - Are they coming from the right sources?
+                    - Success or Failure
+        c. Client Nodes
+            - Initiates transations
+                - Creates a transaction request and sends to one or more Endorser Peer nodes
+                - Chain code defines endorsement policy
+            - Endorsement Policy 
+                - Specifices which Peer is Endorser
+                - Criteria for transaction validation
+                    - Number of endorsments or % needed
+                    - Supports Logical Operators
+                - OPTIONAL
+                - Specified at the time of the deplyoyment of chaincode
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
