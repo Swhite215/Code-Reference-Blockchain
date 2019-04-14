@@ -50,6 +50,26 @@ HyperLedger Fundamentals
             - Programmablle
                 - Chaincode = Smart Contract
                 - Chaincode automates the business process
+        c. Assets
+            - Anything of value
+            - Transactions = change of assets state
+        d. Chaincode
+            - Describes the structure of the asset, JSON or binary
+            - Contains transaction business logic
+        e. Ledger
+            - Tracks all of the asset transactions
+            - All participants have a copy of the ledger
+        f. Permissioned Network
+            - All identities are know
+            - Membership Service Provider (1 or more)
+                - Creating valid participants with certificates
+            - Member, legally separate entities
+            - Identities are managed by way of certificates, Certification Authority X509
+                - Certificate private key is used for signing transaction
+                - Even infrastructure components are assigned identity
+            - Members can manage identitie within their organization
+        g. Nodes and Channels
+            - 
     4. Hyperledger Fabric under the hood
     5. Case Study: ACME Air
     6. Composer Modeling
