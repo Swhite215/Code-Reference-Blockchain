@@ -313,6 +313,14 @@ HyperLedger Fundamentals
                     - composer network start -c cardname -n network name - v version - A adminstrator - S secret
                 - Import Network Administrator's Card
                     - composer card import -f filename
+        k. Composer CL Network Application Management
+            - Administration
+                - composer network --help
+            - Upgrade
+                - composer acrhive create -t dir -n ../
+                - composer network install -a filename -c cardname
+                - composer network upgrade -c cardname -c networkname -V version
+                - composer network ping -c cardname
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
