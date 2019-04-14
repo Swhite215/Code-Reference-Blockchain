@@ -352,6 +352,7 @@ Ethereum Fundamentals
                 - /campaigns/address/requests, show requests for campaign
                 - /campaigns/address/requests/new, form to create a request for campaign at address
                 - nested routing requires additional folders within pages folder
+                    - Create next-routes routes file and tell server to use routes
             - Tech Stack
                 - Next, Server Side React Rendering
                 - Semantic UI React, UI Library
@@ -368,6 +369,10 @@ Ethereum Fundamentals
             - Reusable Components with Next.js
                 - Create components folder
                 - Create layout.js component, render props.childen
+            - Updating and Re-deploying
+                - Add new function(s) to contract
+                - Re-compile contracts
+                - Re-deploy factory contract
     5. Building a multi-page app with Ethereum
     6. Resources
         a. etherscan.io/chart/blocktime
