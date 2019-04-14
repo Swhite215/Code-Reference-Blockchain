@@ -321,6 +321,23 @@ HyperLedger Fundamentals
                 - composer network install -a filename -c cardname
                 - composer network upgrade -c cardname -c networkname -V version
                 - composer network ping -c cardname
+        l. REST Server Tool Overview
+            - Create, Read, Updated, Delete,
+            - POST, GET, PUT, DELETE
+            - Exposes Business Network Model as REST API
+                - Developer can hit http://localhost:3000/explorer (Swagger Like)
+                - Applications can connect to REST server
+            - Commands
+                - compose-rest-server --help
+            - Modes
+                - Interactive
+                - Command Line
+        m. REST Server Security
+            - Should us TLS & Authentication
+            - Multi-User Setup
+                - Set up REST Server with Launch Identity
+                - Configure server to require wallet for auth from all users
+            - Authenticates using Passport.js*
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
