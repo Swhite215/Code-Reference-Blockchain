@@ -206,6 +206,17 @@ HyperLedger Fundamentals
                     - Supports Logical Operators
                 - OPTIONAL
                 - Specified at the time of the deplyoyment of chaincode
+        d. Orderer Nodes/Ordering Service
+            - Communication Channel
+            - Responsible for consistent ledger state and order of transactions
+            - Creates the blocks and guarantees atomic delivery
+            - Implemented with Message Oriented Middleware
+                - SOLO, Single Node for Development, Single Point of Failure
+                - Kafka, Clustering for high throughput, scalability, & fault tolerance
+            - Client broadcasts the endorsed transaction using Orderer broadcast service
+                - Orderer sends block to Anchor Peers
+        e. Membership Service Providers & Certificates of Authority
+            - 
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
