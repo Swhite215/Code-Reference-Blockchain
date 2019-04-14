@@ -1,8 +1,32 @@
 HyperLedger Fundamentals
-    1. What is Hyperledger?
+    1. Hyperledger
+        a. What is it?
+            -Hyperledger is an Umbrella project of open source Blockchain and related tools started in Dec. 2015 by the Linux Foundation.
+            - Version 1.0 released on July 11th, 2017
+        b. Structure of re-usable tools
+            - DLT/Frameworks
+                - Hyperledger Sawtooth
+                - Hyperledger Iroha
+                - Hyperledger Fabric*
+                - Hyperledger Burrow
+            -  Tools
+                - Hyperledger Cello
+                - Hyperledger Composer*
+                - Hyperledger Explorer
+                - Hyperledger Quilt
+        c. Hyperledger Fabric
+            - Set of infrastructure and application building blocks
+            - Practices & Guidelines for creating BC apps
+        d. Summary
+            - Hyperledger = BC incubator
+            - Hyperledger Fabric = distributed ledger technology framework initiative
+            - Hyperledger Composer = tool for creating business applications on DL
     2. Foundation
+        a. Distributed Ledger Technology
+            - Decentralized system for exchange of value
+            - Asset, represents value that is tangible or intangible
     3. Tools and Development
-    4. Hyperledge Fabric under the hood
+    4. Hyperledger Fabric under the hood
     5. Case Study: ACME Air
     6. Composer Modeling
     7. Composer SDK/API
