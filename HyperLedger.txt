@@ -25,7 +25,31 @@ HyperLedger Fundamentals
         a. Distributed Ledger Technology
             - Decentralized system for exchange of value
             - Asset, represents value that is tangible or intangible
-    3. Tools and Development
+            - Each node maintains a copy of the DL
+            - Every time a transaction occurs. all DL are updated
+            - Challenges
+                - Maintaining consistency
+                - Privacy
+                - Standardization, Interperability, and Scalability
+            - Hyperledger Fabric is a DLT framework addressing the above challenges
+    3. Hyperledger Fabric
+        a. What is Hyperledger Fabric
+            - DLT for the Business
+            - Public would be Ethereum or Bitcoin
+        b. Important Characteristics
+            - Permissioned Network
+                - Restricts who can access and do what on the network
+                - Requires known participants, access control lists
+                - Transaction validations
+            - Confidential Transactions
+                - Participants in control of visibility of transactions
+                - Private channels can be created with limited visibility
+            - No cryptocurrency
+                - No need to incentivise the network for validations
+                - Participants decide the who and how of validation
+            - Programmablle
+                - Chaincode = Smart Contract
+                - Chaincode automates the business process
     4. Hyperledger Fabric under the hood
     5. Case Study: ACME Air
     6. Composer Modeling
