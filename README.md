@@ -52,6 +52,10 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Access Control Language](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/permissions.acl)
 
+##### Composer SDK and API
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Card Management](https://github.com/Swhite215/Hyperledger_API/blob/master/manage-cards.js)
+
 ### Ethereum
 
 ##### Overview
