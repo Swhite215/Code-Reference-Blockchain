@@ -1,4 +1,4 @@
-HyperLedger Fundamentals
+Hyperledger Fundamentals
     1. Hyperledger
         a. What is it?
             -Hyperledger is an Umbrella project of open source Blockchain and related tools started in Dec. 2015 by the Linux Foundation.
