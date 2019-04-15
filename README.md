@@ -34,7 +34,9 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Concept](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
 
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction Model](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction Script](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/lib/script.js)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Event](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
 
