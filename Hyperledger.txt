@@ -432,6 +432,25 @@ Hyperledger Fundamentals
                 - regex=
             - Number validation uses range
                 - range=
+        g. Transactions and Events
+            - Transactions
+                - actions participants can take on assets
+                - When transaction, state of assets cange
+                - All transactions recorded in the ledger
+                - Examples
+                    - Schedule a flight
+                    - Reserve a seat
+                    - Block Seat
+                    - Select Seat
+                - no identified by needed
+                - transaction name {}
+                - Annotaions have information that connect function to model
+                - Within function, use Composer API and then emit event
+            - Events
+                - can be received by subscriber applications
+                - event name {}
+            - Historian
+                - REgistry of all successful transactions
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
