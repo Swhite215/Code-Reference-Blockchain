@@ -680,21 +680,35 @@ Hyperledger Fundamentals
                     - flow
                         - post() is invoked -> converts asset to JSON -> REST -> responds with json
     11. Front-End Application Patterns
-        a. REST Server Middleware
-            - FE w/ Angular, HTML, CSS, JS
-            - FE connect w/ REST Server Middleware
-            - FE connects to Enterprise Systems
-            - REST Server must be secured and authenticated, as it communicates with Composer API
-            - REST Server must be multi-user
-        b   Custom Middleware
-            - Custom Middleware NOT REST Server
-        c. Hybrid Middleware
-            - FE -> Web Application -> REST Server (Secured) -> Composer API
-        d. Desktop Application
-            - Installed application -> Composer API / Runtime
-        e. How to decide?
-            - Requirements/Needs
-            - End User/Audience
+        a. Architecture Patterns 
+            - REST Server Middleware
+                - FE w/ Angular, HTML, CSS, JS
+                - FE connect w/ REST Server Middleware
+                - FE connects to Enterprise Systems
+                - REST Server must be secured and authenticated, as it communicates with Composer API
+                - REST Server must be multi-user
+            - Custom Middleware
+                - Custom Middleware NOT REST Server
+            - Hybrid Middleware
+                - FE -> Web Application -> REST Server (Secured) -> Composer API
+            - Desktop Application
+                - Installed application -> Composer API / Runtime
+            - How to decide?
+                - Requirements/Needs
+                - End User/Audience
+        b. Authentication Strategies
+            - Expose REST Server using HTTPS
+            - Enable authentication w/Passport
+                - Oauth 2.0
+                    - User connects to APP -> Invokes API on REST Server -> 401 Unauthorized
+                    - Application redirects user to Log-in Page -> User Credentials -> Auth Request to Identity Provider
+                    - Identity Provider sends back access token and redirects
+                    - Future requests will include access token -> REST Server -> Valid
+                - SAML
+                - LDAP
+                    - User prompted for credentials -> REST Server -> Passport
+                    - Passport -> LDAP Server <- User Profile Object -> REST Server add user object to session store
+                    - REST Server -> Valid
     12. Resources
         a. hyperledger.org
         b. yeoman.org
