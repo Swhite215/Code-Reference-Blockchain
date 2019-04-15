@@ -538,6 +538,29 @@ Hyperledger Fundamentals
                 - Methods
                     - getCardStore(type)
                     -type = composer-wallet-filesystem or composer-wallet-inmemory
+        b. Admin Connection
+            - Connecting to Fabric Runtime, require connect(cardName)
+            - AdminConnection, administrative action on Fabric or BNA
+            - Order
+                - Create instance
+                - connect(cardName)
+                - Categories
+                    - Card Related Functions
+                        - get, delete, has, import, export
+                    - BNA
+                        - start, stop, list, ping, upgrade
+            - BusinessNetworkDefinition
+                - Represents business network application
+        c. BusinessNetworkConnection class
+            - Conneting to Fabric runtime, requires BusinessNetworkCardStore
+            - Interacts with deployed BNA
+                - Get info
+                - Ping
+            - Order
+                - connect(cardName)
+                - disconnect()
+                - ping()
+            -
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
