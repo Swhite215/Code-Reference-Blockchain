@@ -662,7 +662,25 @@ Hyperledger Fundamentals
             - Implementation
                 - Programmatic - code rules in transaction processing function
                 - Declarative - rules defined in Access Control Language
-    11. Develop a Network App
+        d. Emitting Events & Integrating w/Systems
+            - Global Functions
+                - emit()
+                    - emits an event defined in the transaction
+                    - event is created as part of the model
+                    - subscriber receives event with json object
+                - getSerializer()
+                    - get instnace of serializer to convert to and from json
+                    - Serializer.toJson()
+                    - Serializer.fromJson()
+                - post()
+                    - Database, Legacy Applications, Heavy Processing/Calculation, Workflow trigger
+                    - Needed REST HTTP endpoint
+                    - post(url, typed)
+                        -typed = concept, asset, participant, transaction
+                    - flow
+                        - post() is invoked -> converts asset to JSON -> REST -> responds with json
+    11. Front-End Application Patterns
+        a. 
     12. Resources
         a. hyperledger.org
         b. yeoman.org
