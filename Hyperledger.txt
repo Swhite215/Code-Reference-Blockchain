@@ -467,6 +467,46 @@ Hyperledger Fundamentals
                 - LIMIT optional
                 - SKIP optional
                 - ORDER BY optional
+        j. Identity Management
+            - Public Key Infrastructure of the MSP
+            - Each user receives X.509 certificate
+            - Requet -> ID _> RA Validates -> Signed by CA -> VA validates
+            - Card contains credentials and connection profile
+            - Participants need a card to interact with the application
+            - Peer Admin, part of Fabric Setup
+            - Network Admin, part of Network App Setup
+            - Participants, part of Network Administrator's job
+            - Commands
+                - composer participant add -- help
+                - composer identity --help
+            - Process
+                - Create Participant
+                - Bind an identity for BNA
+                - Particpant imports network card
+        k. Access Control Language
+            - Implementation
+                - Programmatic, part of transaction processing function
+                - Declaration, rules defined in Access Control Language
+            - File, permissions.acl in root folder of model project
+            - Type of Rules
+                - Simple, controls access to namespace, asset, or property
+                - Cnditional Rule, boolean expression evaluated at runtime to allow or deny
+            - Rule Outline
+                - Resource, provide resource class, instance, or all resources in a namespace
+                - Participant, ANY or specific participant
+                - Operation, set of operations in CRUD
+                - Transaction
+                - Condition?
+            - Creation
+                - rule name }
+            - Processing
+                - check for permissions.acl
+                - execute rules in the order they appear
+                - action allow -> granted, action deny -> denied
+            - Testing
+                - Updated BNA, install and import card
+                - Issue identity
+                - Launch REST Server
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
