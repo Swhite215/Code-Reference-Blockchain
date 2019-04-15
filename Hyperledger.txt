@@ -495,8 +495,9 @@ Hyperledger Fundamentals
                 - Resource, provide resource class, instance, or all resources in a namespace
                 - Participant, ANY or specific participant
                 - Operation, set of operations in CRUD
-                - Transaction
-                - Condition?
+                - Transaction, specify transaction in the rule
+                - Condition, provide valid boolean expresion
+                    - symbolic access, r, op, p, transaction
             - Creation
                 - rule name }
             - Processing
@@ -507,6 +508,9 @@ Hyperledger Fundamentals
                 - Updated BNA, install and import card
                 - Issue identity
                 - Launch REST Server
+            - Control & Permissions
+                - Best Practice, don't allow for direct CRUD operations, use transactions
+                - Provide permissioned access to the transactions
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
