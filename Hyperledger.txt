@@ -615,6 +615,14 @@ Hyperledger Fundamentals
                 - updateAll()
                 - remove()
                 - removeAll()
+        g. Query API (Client)
+            - Named
+                - BNC.query(name, parameters_object)
+            - Dynamic
+                - BNC.buildQuery(query_statement) -> BNC.query(queryReturned, parameters_object)
+            - Order
+                - BusinessNetworkConnection
+                - BNC.query()
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
