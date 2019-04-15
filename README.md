@@ -56,6 +56,12 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Card Management](https://github.com/Swhite215/Hyperledger_API/blob/master/manage-cards.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Admin Connection](https://github.com/Swhite215/Hyperledger_API/blob/master/admin-connection.js)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Business Network Definition](https://github.com/Swhite215/Hyperledger_API/blob/master/update-bna.js)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Business Network Connection](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-connection-util.js)
+
 ### Ethereum
 
 ##### Overview
