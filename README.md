@@ -64,6 +64,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Factory](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-factory-submit-txn.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Registries](https://github.com/Swhite215/Hyperledger_API/blob/master/get-registries.js)
+
 ### Ethereum
 
 ##### Overview
