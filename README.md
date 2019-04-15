@@ -18,6 +18,12 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
 
+### Hyperledger
+
+##### Overview
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
+
 ### Ethereum
 
 ##### Overview
