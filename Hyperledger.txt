@@ -511,7 +511,7 @@ Hyperledger Fundamentals
             - Control & Permissions
                 - Best Practice, don't allow for direct CRUD operations, use transactions
                 - Provide permissioned access to the transactions
-    9. Composer SDK/API
+    9. Composer SDK/API Coding Client Applications
         a. Business Network Card Management
             - BNC
                 - User interacts with Fabric using composer, and composer needs BNC
@@ -631,8 +631,22 @@ Hyperledger Fundamentals
             - Order
                 - BusinessNetworkConnect, extends EventEmitter
                 - BCN.on("event", callback)
-    10. Develop a Network App
-    11. Resources
+    10. Composer SDK/API Coding Transaction Processors
+        a. Embedded Runtime
+            - How does it work?
+                - Simulates Fabric runtime
+                - Before test, network application gets deployed on embedded runtime
+                - Uses in-memory persistence
+                - No special library
+            - Unit Testing Harness
+                - Creation of PeerAdmin Card, type = embedded
+                - Use card store and card to create Admin COnnection object
+                - Use AC to deploy model files into embedded runtime, network admin card is created
+                - BusinessNetworkConnection is created
+                - Unit Test use AC and BNC to test
+            - Types of runtimes - Fabric w/Docker, PLayground, Embedded
+    11. Develop a Network App
+    12. Resources
         a. hyperledger.org
         b. yeoman.org
         c. curl.haxx.se
