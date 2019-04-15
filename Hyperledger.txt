@@ -714,6 +714,21 @@ Hyperledger Fundamentals
                 - Register for OAuth2.0 on github.com
                 - Setup REST server launch script
                 - Execute launch script on command line
+        c. REST Server Multi-User Setup
+            - By default, common identity of REST Server is used for all transactions
+            - REST Server uses authenticated users in combination with a wallets with cards for each user
+            - Needs Persistent Storage management, can use any noSQL database - MongoDB or CouchDB
+            - DB connected via loopback connector
+            - User -> App w/ Wallet API -> REST Server gets card and uses for transaction
+            - Security challenge is cards are maintained in database
+            - REST and DB must be secured
+            - Trust challenge, Can or will the user trust the REST server with their credentials?
+            - Setup
+                - Enable AUTH on the REST Server
+                - Set up persistent storage for wallet management
+                - Install the Loopback DB Connector module
+                - Extend the launch script to enable multi-user mode
+                - Setup the identity on BNA = Oauth identity
     12. Resources
         a. hyperledger.org
         b. yeoman.org
