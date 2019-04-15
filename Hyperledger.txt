@@ -623,6 +623,14 @@ Hyperledger Fundamentals
             - Order
                 - BusinessNetworkConnection
                 - BNC.query()
+        h. Subscribing to Events
+            - Using Client API
+            - Using Rest Server
+            - Events
+                - participants execute transactions -> events emitted
+            - Order
+                - BusinessNetworkConnect, extends EventEmitter
+                - BCN.on("event", callback)
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
