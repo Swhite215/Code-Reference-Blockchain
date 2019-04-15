@@ -451,6 +451,22 @@ Hyperledger Fundamentals
                 - event name {}
             - Historian
                 - REgistry of all successful transactions
+        i. Query Language
+            - Queries, Resources can be queried at runtime 
+                - Named query, defined as part of the business network model
+                - Dynamic query, constructed dynamically at runtime
+                - queries.qry
+                    - query {
+                        description: of the query,
+                        statement: SQL like
+                    }
+                - SELECT = mandatory, reigistry and asset type
+                - Parameters, _$param-name, only primitive types
+                - WHERE = optional parameter
+                - AND OR Logical Operators
+                - LIMIT optional
+                - SKIP optional
+                - ORDER BY optional
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
