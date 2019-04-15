@@ -413,6 +413,20 @@ Hyperledger Fundamentals
                 - a way to create or define generic classes
                 - does not represent a resource
                 - Group together properties and then use them
+        e. Modeling Arrays
+            - Type[] name
+        f. Registries & Relationships
+            - Registries
+                - Manage instances of resources with unique identities (key)
+                - Separate registry for each resource type
+            - Relationships
+                - Multiple registries of different resource types
+                - Example: Participant owns some asset
+                - --> decpits a relationship
+                - Pointer to specific asset type
+                - value is name = import#id
+            - What happens if reference is deleted?
+                - Field will return a null value
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
