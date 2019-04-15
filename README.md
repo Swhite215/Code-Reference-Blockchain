@@ -74,6 +74,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Subscription REST Server](https://github.com/Swhite215/Hyperledger_API/blob/master/subscribe-event-ws.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Unit Testing Structure](https://github.com/Swhite215/Hyperledger_API/blob/master/ut-harness.js)
+
 ### Ethereum (ET)
 
 ##### ET Overview
