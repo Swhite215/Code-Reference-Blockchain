@@ -512,6 +512,32 @@ Hyperledger Fundamentals
                 - Best Practice, don't allow for direct CRUD operations, use transactions
                 - Provide permissioned access to the transactions
     9. Composer SDK/API
+        a. Business Network Card Management
+            - BNC
+                - User interacts with Fabric using composer, and composer needs BNC
+            - Card Storage
+                - File System, RAM, DB, Cloud Storage
+            - Wallet
+                - Collection of cards assocaited with an user
+                - Custom card persistence
+            - IdCard under Common Module
+                - Get information from card
+                - Create a new card and save to archive or directory
+            - BusinessNetworkCardStore
+                - Management of cards in persistent storage
+                - Methods
+                    - get(cardName)
+                    - getAll()
+                    - has(cardName)
+                    - delete(cardName)
+                    - put(cardName)
+                - Abstract class
+            - NetworkCardStoreManager
+                - Factory for BusinessNetworkCardStore
+                - Available from Common
+                - Methods
+                    - getCardStore(type)
+                    -type = composer-wallet-filesystem or composer-wallet-inmemory
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
