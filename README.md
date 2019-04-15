@@ -76,6 +76,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Unit Testing Structure](https://github.com/Swhite215/Hyperledger_API/blob/master/ut-harness.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Mocha Example Setup](https://github.com/Swhite215/Hyperledger_API/blob/master/mocha-demo.js)
+
 ### Ethereum (ET)
 
 ##### ET Overview
