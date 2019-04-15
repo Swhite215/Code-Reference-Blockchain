@@ -680,7 +680,21 @@ Hyperledger Fundamentals
                     - flow
                         - post() is invoked -> converts asset to JSON -> REST -> responds with json
     11. Front-End Application Patterns
-        a. 
+        a. REST Server Middleware
+            - FE w/ Angular, HTML, CSS, JS
+            - FE connect w/ REST Server Middleware
+            - FE connects to Enterprise Systems
+            - REST Server must be secured and authenticated, as it communicates with Composer API
+            - REST Server must be multi-user
+        b   Custom Middleware
+            - Custom Middleware NOT REST Server
+        c. Hybrid Middleware
+            - FE -> Web Application -> REST Server (Secured) -> Composer API
+        d. Desktop Application
+            - Installed application -> Composer API / Runtime
+        e. How to decide?
+            - Requirements/Needs
+            - End User/Audience
     12. Resources
         a. hyperledger.org
         b. yeoman.org
