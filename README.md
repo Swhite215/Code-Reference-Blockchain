@@ -62,6 +62,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Business Network Connection](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-connection-util.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Factory](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-factory-submit-txn.js)
+
 ### Ethereum
 
 ##### Overview
