@@ -68,6 +68,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Resources](https://github.com/Swhite215/Hyperledger_API/blob/master/add-resources.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Queries API](https://github.com/Swhite215/Hyperledger_API/blob/master/client-query.js)
+
 ### Ethereum (ET)
 
 ##### ET Overview
