@@ -594,6 +594,27 @@ Hyperledger Fundamentals
                 - BNC.getAllAssetRegistries()
                 - BNC.getAllParticipantRegistries()
                 - BNC.getAllTransactionRegistries()
+        f. Resources
+            - Instance that is a pointer to instance in the Registry
+            - Methods
+                - getType()
+                - getNamespace()
+                - getFullyQualifiedType()
+                - getIdentifier()
+                - getFullyQUalifiedIdentifier()
+                - instance()
+                - isRelationship()
+                - setIdentifier()
+                - setPropertyValue()
+                - addArrayValue()
+                - add() - Create
+                - addAll()
+                - get()
+                - getAll()
+                - update()
+                - updateAll()
+                - remove()
+                - removeAll()
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
