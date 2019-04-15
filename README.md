@@ -48,6 +48,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Number Validation](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.aircraft.cto)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Queries](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/queries.qry)
+
 ### Ethereum
 
 ##### Overview
