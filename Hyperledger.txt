@@ -380,6 +380,39 @@ Hyperledger Fundamentals
                     - Node.js container
     7. Case Study: ACME Air
     8. Composer Modeling
+        a. Language
+            - Object oriented language for defining the domain model for the business network
+        b. Model
+            - Participants
+            - Assets
+            - Transactions
+            - Events
+            - file w/ .cto
+            - Order
+                - Declare namespace, must be globally unique
+                - Resources = assets, participants, transactions, and events
+            - System Namcespace
+                - Default
+                - Resource classes or definitions
+        c. Primitive Types
+            - String 
+            - Double
+            - Integer
+            - Long
+            - DateTime
+            - Boolean
+        d. Important Aspects
+            - Abstract
+                - abstract resource name identified by property
+                - must be extended to create instances
+            - Inheritance
+                - new resources should be same type as ancestor
+                - type name extends AncestorType
+                - Multiple inheritance is not supported
+            - Concept
+                - a way to create or define generic classes
+                - does not represent a resource
+                - Group together properties and then use them
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
