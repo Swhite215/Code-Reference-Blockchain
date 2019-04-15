@@ -24,6 +24,10 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
 
+##### Models
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Multiple Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
+
 ### Ethereum
 
 ##### Overview
