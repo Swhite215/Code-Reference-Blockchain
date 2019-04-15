@@ -70,6 +70,10 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Queries API](https://github.com/Swhite215/Hyperledger_API/blob/master/client-query.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Subscription API](https://github.com/Swhite215/Hyperledger_API/blob/master/subscribe-event.js)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Subscription REST Server](https://github.com/Swhite215/Hyperledger_API/blob/master/subscribe-event-ws.js)
+
 ### Ethereum (ET)
 
 ##### ET Overview
