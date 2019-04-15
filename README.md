@@ -38,6 +38,10 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Event](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Import](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Relationship](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
 ### Ethereum
 
 ##### Overview
