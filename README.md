@@ -12,19 +12,19 @@ To provide reference materials for a variety of topics encountered when building
 
 ## Section Quick Link Access:
 
-### Blockchain
+### Blockchain (BC)
 
-##### Overview
+##### BC Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
 
-### Hyperledger
+### Hyperledger (HL)
 
-##### Overview
+##### HL Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
 
-##### Composer Modeling Language
+##### HL Composer Modeling Language
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Example Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
 
@@ -52,7 +52,7 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Access Control Language](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/permissions.acl)
 
-##### Composer SDK and API
+##### HL Composer SDK and API
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Card Management](https://github.com/Swhite215/Hyperledger_API/blob/master/manage-cards.js)
 
@@ -66,13 +66,15 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Registries](https://github.com/Swhite215/Hyperledger_API/blob/master/get-registries.js)
 
-### Ethereum
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Resources](https://github.com/Swhite215/Hyperledger_API/blob/master/add-resources.js)
 
-##### Overview
+### Ethereum (ET)
+
+##### ET Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/Ethereum.txt)
 
-##### Contracts
+##### ET Contracts
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Simple Contract](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/inboxContract/contracts/inbox.sol)
 
@@ -80,27 +82,27 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Advanced Contract](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/campaignContract/contracts/campaign.sol)
 
-##### Compilation
+##### ET Compilation
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Single Contract Compile](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/lotteryContract/compile.js)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Multi-Contract Compile](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/ethereum/compile.js)
 
-##### Deployment
+##### ET Deployment
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Contract Factory Deployment](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/ethereum/deploy.js)
 
-##### Node Connection Using Web3
+##### ET Node Connection Using Web3
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Client w/MetaMask](https://github.com/Swhite215/Ethereum_Lottery_Client/blob/master/src/web3.js)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Server or Client](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/ethereum/web3.js)
 
-##### Deployed Contract Connection
+##### ET Deployed Contract Connection
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Client w/Web3](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/ethereum/campaignFactory.js)
 
-##### Deployed Contract Utilization
+##### ET Deployed Contract Utilization
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Simple Methods w/Calls](https://github.com/Swhite215/Ethereum_Lottery_Client/blob/master/src/App.js)
 
@@ -110,7 +112,7 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Error Handling](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/components/ContributeForm.js)
 
-##### Testing
+##### ET Testing
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Simple Testing](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/inboxContract/test/inbox.test.js)
 
