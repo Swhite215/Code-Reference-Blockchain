@@ -424,9 +424,14 @@ Hyperledger Fundamentals
                 - Example: Participant owns some asset
                 - --> decpits a relationship
                 - Pointer to specific asset type
-                - value is name = import#id
+                - value is name = namespace.resourceName#resourceIdentity
             - What happens if reference is deleted?
                 - Field will return a null value
+        g. Field Validations
+            - String validation uses regular expressions
+                - regex=
+            - Number validation uses range
+                - range=
     9. Composer SDK/API
     10. Develop a Network App
     11. Resources
