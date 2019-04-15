@@ -645,6 +645,23 @@ Hyperledger Fundamentals
                 - BusinessNetworkConnection is created
                 - Unit Test use AC and BNC to test
             - Types of runtimes - Fabric w/Docker, PLayground, Embedded
+        b. Queries (Transaction Processor)
+            - Queries
+                - Named .query(name)
+                - Dynamic .buildQuery(query statements) -> qry.query(qry_returned, JSON param object)
+            - Usage Scenarios
+                - Batch Updates
+                - Calculations
+                - Consolidations
+        c. Implementing Programmatic Access Control
+            - Coding Access Control
+                - runtime.getCurrentParticipants() -> Participant resource.getFullyQualifiedType or .getFullyQUalifiedIdentifier
+                - Order
+                    - get participant
+                    - check if getFullyQualifiedType == "value" or check if getFullyQUalifiedIdentifier == "id"
+            - Implementation
+                - Programmatic - code rules in transaction processing function
+                - Declarative - rules defined in Access Control Language
     11. Develop a Network App
     12. Resources
         a. hyperledger.org
