@@ -338,6 +338,46 @@ Hyperledger Fundamentals
                 - Set up REST Server with Launch Identity
                 - Configure server to require wallet for auth from all users
             - Authenticates using Passport.js*
+        n. Angular Skeleton Application
+            - Angular v2.0 w/ Typescript
+            - Pros
+                - Quick
+                - Standardization
+                - Testing
+            - Cons
+                - Composer REST Server is needed
+            - Usage
+                - Launch Fabric
+                - Deploy BNA and Admin
+                - Launch Composer REST Server
+                - yo hyperledger-composer:angular
+                - ng serve
+            - Structure
+                - yo hyperleder-composer:angular
+                - Skeleton Angular Application
+                - composer-rest-server w/ SDK
+                - Use ID Cards (w/ connection proiles and credentials) to connect to DLT on runtime
+        o. Composer SDK use w/applications
+            - Overview
+                - Used for developing full-stack applications
+            - Modules 
+                - Client
+                    - Hides protocol details
+                    - Business logic would be written here to connect to Fabric runtime
+                    - Use card for credentials
+                    - CRUD on assets
+                    - Submit transactions
+                    - Subscribe to events
+                - Admin
+                    - Automation of admin tasks
+                    - Used for creating tools and utilities
+                    - Use card for credentials
+                    - Examples, deploy/update script, manage cards, periodic pinging
+                - Common
+                    - Common interfaces
+                - Runtime 
+                    - Container for chaincode
+                    - Node.js container
     7. Case Study: ACME Air
     8. Composer Modeling
     9. Composer SDK/API
