@@ -444,7 +444,7 @@ Hyperledger Fundamentals
                     - Select Seat
                 - no identified by needed
                 - transaction name {}
-                - Annotaions have information that connect function to model
+                - Annotaions have information that connect model to code
                 - Within function, use Composer API and then emit event
             - Events
                 - can be received by subscriber applications
