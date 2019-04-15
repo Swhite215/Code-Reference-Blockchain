@@ -24,7 +24,7 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
 
-##### Models
+##### Composer Modeling Language
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Example Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
 
@@ -41,6 +41,10 @@ To provide reference materials for a variety of topics encountered when building
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Import](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Relationship](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [String Validation](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Number Validation](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.aircraft.cto)
 
 ### Ethereum
 
