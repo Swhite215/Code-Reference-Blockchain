@@ -573,7 +573,27 @@ Hyperledger Fundamentals
             - Resource
                 - Resource instance that has type
         e. Registries
-            
+            - Registries like participant and assets
+            - Registry - Abstract Class, available under Client module
+            - CRUD Available
+            - Concrete
+                - AssetRegistry, separate client and runtime
+                - ParticipantRegristry, separate client and runtime
+                - TransactionRegistry
+                - Historian, read only
+                - Identity Registry, read only
+            - Order
+                - Connect to Fabric with BusinessNetworkConnection
+                - BNC.getRegistry(FQ Regristy Name) -> Instance of Registry class
+            - Methods
+                - BNC.getAssetRegistry(Registry Name)
+                - BNC.getParticipantRegistry(Registry Name)
+                - BNC.getTransactionRegistry(Registry Name)
+                - BNC.getHistorian()
+                - BNC.getIdentityRegistry()
+                - BNC.getAllAssetRegistries()
+                - BNC.getAllParticipantRegistries()
+                - BNC.getAllTransactionRegistries()
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
