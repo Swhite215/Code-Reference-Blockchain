@@ -560,7 +560,20 @@ Hyperledger Fundamentals
                 - connect(cardName)
                 - disconnect()
                 - ping()
-            -
+        d. Submitting Transactions
+            - getBusinessNetwork() -> instance of BusinessNetworkDefinition
+            - BND.getFactory() -> used for creating instances of resoureces
+            - Factory Functions
+                - newResource(namespace, type, identifier) -> Resource Object
+                - newConcept(namespace, type, options) -> Concept Instance
+                - newRelationship(namespace, type, identifier) -> Relationship Instance
+                - newEvent(namespace, type, id, options) -> Event Resource
+                - newTransaction(namespace, type, identifier, options) -> Resource Instance
+                    - Submit for processing using instnace of BusinessNetworkConnection.submitTransaction(transaction)
+            - Resource
+                - Resource instance that has type
+        e. Registries
+            
     10. Develop a Network App
     11. Resources
         a. hyperledger.org
