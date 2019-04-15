@@ -26,7 +26,17 @@ To provide reference materials for a variety of topics encountered when building
 
 ##### Models
 
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Multiple Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Example Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Abstract](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Inheritance](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Concept](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Event](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
 
 ### Ethereum
 
