@@ -116,5 +116,3 @@ Hyperledger Fabric Documentation
                 - Fabric CA - Root CA manages X.509 certificates
             - Certificate Revocation Lists
                 - list of references to certificates a CA knows to be revoked
-              
-        b. 
