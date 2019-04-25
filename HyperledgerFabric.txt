@@ -91,4 +91,30 @@ Hyperledger Fabric Documentation
         a. What is a blockchain network?
             - Technical infrastructure that provides ledger and smart contract (chaincode) services to applications
             - Smart contracts used to generate transactions which are subsequentlly distributed to every peer node in the network where they are immutably recorded on their copy of the ledger 
-            - Multiple organizations come together as a consortium to form the network and their permissions are determined by a set of policies that are agreed by the consortium when the network is originally configured.
+            - Multiple organizations come together as a consortium to form the network and their permissions are determined by a set of policies that are agreed by the consortium when the network is originally configured
+    5. Identity
+        a. What is an Identity?
+            - Actors include peers, orderers, client applications, adminstrators, and more
+            - Each actor has a digital identity encapsulatd in an X.509 digital certificate
+            - These identities determine the exact permissions over resources and access to information that actors have in a blockchain network
+            - Principal, union of an identity and the associated attributes
+                - Attributes include organization, unit, role, identity
+              - Verifiable, must come from a trusted authority
+              - MSP defines the rules that govern valid identities for this organization
+        b. What are PKIs?
+            - Public Key Infrastructure, collection of internet technologies that provide secure communications in a network
+            - Comprised of CAs that issue digital certificates to parties, who then use them to authenticate
+            - Digital Certificates
+                - Document that holds a set of cryptographic attributes relating to the holder of the certificate
+            - Public and Private Keys
+                - Public Key, acts as authentication anchor
+                - Private Key, used to produce digital signatures on messages
+            - Certificate Authorities
+                - Dispense digitally signed certificates to different actors
+                - Can verify actor is bound to the public key in the certificate through validatings the CA's signature
+                - Root and Intermediate CAs
+                - Fabric CA - Root CA manages X.509 certificates
+            - Certificate Revocation Lists
+                - list of references to certificates a CA knows to be revoked
+              
+        b. 
