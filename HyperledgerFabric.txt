@@ -1,0 +1,46 @@
+Hyperledger Fabric Documentation
+    1. Enterprise Requirements
+        a. Identifiable Participants
+        b. Permissioned Networks
+        c. High Transaction Throughput Performance
+        d. Low Latency of Transaction Confirmation
+        e. Privacy and Confidentiality of Business Transactions and Data 
+    2. Idea
+        a. Enterprise grade permissioned distributed ledger technology platform
+        b. Open Governance
+        c. Modular and Configurable
+            - Pluggable ordering service
+            - Pluggable membership service provider
+            - Peer-To-Peer gossip service
+            - Smart Contract
+            - Ledger configuration
+            - Endorsment and validation policies
+        d. Smart Contracts with Go, Java, and Node
+            - Order Execute
+                - Validates and orders transactions and then propogates them to all peer nodes
+                - each peer then executes the transaction sequentially
+            - Execute Order Validate
+                -  Exceute a transaction and check its correctness, thereby endorsing it
+                - Order transactions via a pluggable consensus protocol
+                - Validate transactions against an application specific endorsement policy before committing them to the ledger
+        e. Permissioned
+            - Permissionless = Anyone
+            - Permissioned = Limited
+        f. Pluggable Consensus Protocols
+        g. Performance
+    3. Model
+        a. Assets
+          - Key:Value Pairs
+          - Binary or JSON form
+        b. Chaincode
+          - Software defining an asset or assets and the transaction instructions for modifying the assets
+          - Functions execute against the ledger's current state database
+        c. Ledger Features
+          - Sequenced, tamper resistant record of all state transitions in the fabric
+        d. Privacy
+          - Separate channel to isolate and segregate transactions and ledger
+          - Private data collection can segregate data in a private database, separate from the channel ledger
+        e. Security & Membership Services
+          - Public Key Infrastructure used to generate cryptographic certificates
+        f. Consensus
+          - 
