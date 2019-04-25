@@ -116,3 +116,35 @@ Hyperledger Fabric Documentation
                 - Fabric CA - Root CA manages X.509 certificates
             - Certificate Revocation Lists
                 - list of references to certificates a CA knows to be revoked
+     6. Membership
+        a. Membership Service Provider
+            - Identifies which Root CAs and Intermediate CAs are trusted to define the members of a trsut domain e.g. an organization
+            - Identity roles an actor may play
+            - Basis for defining access privileges in the context of a network and channel e.g. channel admins, readers, writers
+            - Structure
+                - Org - MSP - Members
+                - Org - Multiple MSPs by Channel - Members
+        b. Local and Channel MSPs
+            - Channel MSPs, channel
+            - Local MSPs, defined for clients, peers, and orderers
+        c. Types of MSP
+            - Network, defines who are the members in the network
+            - Channel, defines who has the ability to particiapte in certain action on the channel
+            - Peer, defines who has the ability to perform certain actions on the Peer
+            - Orderer, defines the actors or nodes it trusts
+        d. MSP Structure (Subfolders)
+            - Root CAs, self-signed X.509 certificates of the Root CAs trusted by the org
+            - Intermediate CAs, Root signed X.509 certificates of the Intermediate CAs trusted by the org
+            - Organizational Units, 
+            - Adminstrators, define the actors who have the role of administrators for this org
+            - Revoked Certificates, Subject Key Identifiers and Authority Access Identifiers associated with revoked certificates
+            - Node Identity, cryptographic material allowing the node to authenticate itself in the messages it sends to other participants of its channels and networks
+            - KeyStore for Private Key, contains node's signing key
+            - TLS Root CA, certificates for TLS communication
+            - TLS Intermediate CA, certificates for TLS communication
+     7. Peers
+     8. Smart Contract and Chaincode
+     9. Ledger
+     10. The Ordering Service
+     11. Private Data
+     12. Use Cases
