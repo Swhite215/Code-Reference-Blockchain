@@ -43,4 +43,36 @@ Hyperledger Fabric Documentation
         e. Security & Membership Services
           - Public Key Infrastructure used to generate cryptographic certificates
         f. Consensus
-          - 
+          - Could be a specific algorithm, within a single function, like cryptographic hashing
+          - In Hyperledger Fabric, consensus is achieved as a byproduct of the ongoing verification taking place during a transaction's journey from proposal to commitment
+        g. Channels
+           - Provide a mechanism for private communications and private data between the members of a consortium
+        h. Peer Nodes
+            - Network components where copies of the blockchain ledger are hosted
+            - An X.509 certificate was issued by the Certificate Authority which associates P1 with organiztion R1.
+            - The Peer can join channel using the Orderer, which uses the channel configuration to determine the peers permissions on this channel
+         i. Smart Contract
+            - Client can use smart contract to access ledger via the peer node
+            - Provides a well defined set of ways by which the ledger can be queried and updated
+            - First, a contract implementation has to be installed on a peer node
+                - Peer node can see the implementation logic of S5
+            - ONCE: Second, the smart contract interface has to be instantiated on the channel using the peer node
+         j. Endorsement Policy
+            - An endorsement policy is supplied at the time of instantiation of the chain code
+            - It describes which organization must approve transactions before they will be accepted by other organizations onto their copy of the ledger
+         k. Invoking a Smart Contract
+            - Once it is installed on a Peer node and instantiated in the Channel, the chain code can be invoked by a client application
+            - Invocation is done through client applications sending proposals to peers owned by the organizations specific by the smart contract endorsment policy
+            - Transaction proposal serves as input to the smart contract, which generates an endoresed transaction response, which is returned by the peer node to the client application
+            - Transaction response plus transaction proposal form a fully endorsed transaction 
+         l. Types of Peers
+            - REQUIRED: Committing Peer, every peer node, receives blocks of transaction which are subsequently validated before they are committed to the peer node's copy of the ledger as an append operation
+            - REQUIRED: Endorsing Peer, every peer with a smart contract can be an endorsing peer. The smart contract on the peer must be used by a client application to generate a digitally signed transaction response.
+                - Endorsement policy identifies the organizations whose peers should be endorsers
+             - REQUIRED: Leader Peer, takes responsibility for distributing transactions from the Orderer to the other committing peers
+             - Anchor Peer, Cross organization communication point
+    4. Blockchain Network
+        a. What is a blockchain network?
+            - Technical infrastructure that provides ledger and smart contract (chaincode) services to applications
+            - Smart contracts used to generate transactions which are subsequentlly distributed to every peer node in the network where they are immutably recorded on their copy of the ledger 
+            - Multiple organizations come together as a consortium to form the network and their permissions are determined by a set of policies that are agreed by the consortium when the network is originally configured.
