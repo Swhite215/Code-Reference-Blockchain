@@ -71,6 +71,22 @@ Hyperledger Fabric Documentation
                 - Endorsement policy identifies the organizations whose peers should be endorsers
              - REQUIRED: Leader Peer, takes responsibility for distributing transactions from the Orderer to the other committing peers
              - Anchor Peer, Cross organization communication point
+         m. Configurations
+            - Network
+                - Governs orderer behavior and permits organization to manage network resources
+            - Channel
+                - Governs access to the channel resources, read or write authority, etc
+            - Updating
+                - Adminstrator must submit a configuration transaction to change the network or channel configuration
+                - Mod_Policy
+         n. Ordering Service
+            - Channel Level
+                - Gathers endorsed applications from transactions and orders them into transaction blocks
+            - Network Level
+                - Management point for network resources according to the policies defined in network configuration
+          o. Policy Change
+            - Modification Policy
+                - First class policy within a network or channel configuration that manages change
     4. Blockchain Network
         a. What is a blockchain network?
             - Technical infrastructure that provides ledger and smart contract (chaincode) services to applications
