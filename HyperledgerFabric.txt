@@ -143,6 +143,47 @@ Hyperledger Fabric Documentation
             - TLS Root CA, certificates for TLS communication
             - TLS Intermediate CA, certificates for TLS communication
      7. Peers
+        a. Ledger and Chaincode
+            - Peer hosts instances of both
+            - Applications and Adminstrators must interact with a peer to access these resources
+            - Can host multiple ledgers and smart contracts
+        b. Applications and Peers
+            - Order
+                - Connect to Peer
+                - Invoke Chaincode
+                    - Peer invokes chaincode with propsal
+                    - Chaincode generates query or update proposal response
+                - Proposal Response (Done if query...), (Must go through consensus if transaction)
+                - Request transaction is ordered
+                    - Transaction sent to peers in blocks
+                    - Peer updates ledger using transaction blocks
+                - Ledger update event
+         c. Peers and Channels
+            - Channels allow a specific set of peers and applications to communicate with eachother within a network
+         d. Peers and Organizations
+            - Multiple peers from various organizations come together in a channel to form the network
+         e. Peers and Identity
+            - A policy in the channel configuration uses the peer's identity to determine it's rights
+            - Membership Service Provider determines how a peer gets assigned to a specific role in a particular ogranzation and accordingly gains appropriate access to blockchain resources
+         f. Peers and Orderers
+            - During update transactions, a peer requires other peers in the network to approve a ledger update before it can be applied, this is called consensus
+            - Process (Consensus)
+                - Phase 1
+                    - Application generates a transaction proposal which they send to each of the required set of peers for endorsement
+                    - Endorsing pers execute chaincode using the transaction proposal and generate a transaction proposal response. 
+                    - These peers are determined by the endorsement policy defined for a chaincode
+                    - A peer endorses a resonse by adding its digital signature and signing the entire payload using its private key
+                    - Endorsed responses are returned to application
+                - Phase 2
+                    - Orderer receives transaction and orders them into blocks
+                - Phase 3
+                    - Orderer sends blocks to peers, which can be cascaded to other peers using the gossip protocol
+                    - Peers validates every transaction in a block according to the endorsement policy of the chaincode which generated the transaction
+                    - Peer then udpates the transaction ledger
+                    - Peer also generates an event
+                        - Block event contains full block content
+                        - Block transaction event includes summary information only
+                        - Chaincode events can also be published at this time
      8. Smart Contract and Chaincode
      9. Ledger
      10. The Ordering Service
