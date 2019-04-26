@@ -244,5 +244,43 @@ Hyperledger Fabric Documentation
         h. World State Database Options
             - LevelDB or CouchDB
      10. The Ordering Service
+        a. What is Ordering?
+            - Handles transaction ordering, and along with other nodes forms an ordering service
+        b. Orderer Nodes and Channel Configuration
+            - Orderers also maintain the list of organizations that are allowed to create channels (consortium)
+            - Enforce basic access control for channels, restricting who can read from and write data to, and configure them
+            - Configuration transactions are processed by the orderers
+        c. Orderers and the Transaction Flow
+            - Phase One: Proposal
+                - A client sends a transaction proposal to endorsing peers that will invoke a smart contract to produce a proposed ledger update and then endores the results
+            - Phase Two: Ordering
+                - Ordering Service node receives transactions containing endorsed transaction proposal responses
+                - Ordering Service creates blocks of transactions
+                - Number of transactions depends on channel configuration parameters BatchSize and BatchTimeout
+                - Once a transaction has been written to a block, its position is immutably assured
+            - Phase Three: Validation and Commit
+                - Orderer distributes blocks to all peers connected to it, cascaded to other peers using gossip protocol
+                - Each peer validates distributed blocks independently
+        d. Ordering Service Implementations
+            - Solo
+                - Only a single ordering node
+                - Not fault tolerant
+            - Raft
+                - Crash Fault Tolerant ordering service
+                - Leader and follower model
+                - Concepts
+                    - Log Entry
+                    - Consenter set
+                    - Finite-State Machine
+                    - Quoroum
+                    - Leader
+                    - Follower
+                - Three States
+                    - Follower, can accept log entries or cast votes for a leader
+                    - Candidate, request votes from other nodes for leader
+                    - Leader, candidate receives a quorum
+            - Apache Kafka
+                - Crash Fault Tolerant ordering service
+                - Leader and follower model
      11. Private Data
      12. Use Cases
