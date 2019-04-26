@@ -210,6 +210,39 @@ Hyperledger Fabric Documentation
             - ESCC - Endorsement System Chaincode, runs in endorsing peers to cryptographically sign a transaction response
             - VSCC - Validation System Chaincode, validates a transaction, including checking endorsement policy and read-write set versioning
      9. Ledger
+        a. What is a Ledger?
+            - State, current state of assets
+            - Transaction log, ordered list of transactions that derive state
+        b. Ledgers, Facts, and States
+            - Ledger doesnt store the object, but rather facts about objects
+        c. The Ledger
+            - World State, a database that holds a cache of the current values of a set of ledger states
+            - Blockchain, a transaction log that records all the changes that have resulted in the current world state
+        d. World State
+            - Implemented as a NoSQL database
+            - Version is incremented every time there is a state change
+        e. Blockchain
+            - Transaction log
+            - Each block includes a hash of the block's transactions as well as a copy of the hash of the prior block's header
+            - Implemented as a file
+        f. Blocks
+            - Block Header
+                - Block number, an integer starting at 0 and incremented by 1 for every new block appended to the blockchain
+                - Current Block Hash, the hash of all the transactions contained in the current block
+                - Previous Block Hash, a copy of the has from the previous block in the blockchain
+            - Block Data
+                - List of transactions arranged in order
+            - Block Metadata
+                - Time when block was written as well as certificate, public key, and signature of block writer
+        g. Transactions
+            - Transaction captures changes to the world state
+            - Header, captures essential metadata about the transaction
+            - Signature, cryptographic signature, created by the client application
+            - Proposal, encodes the input parameters supplied by an application to the smart contract which creates the proposed ledger update
+            - Response, captures before and after values of the world state as a Read Write set
+            - Endorsements, list of signed transaction responses from each required organization to satisfy the endorsment policy
+        h. World State Database Options
+            - LevelDB or CouchDB
      10. The Ordering Service
      11. Private Data
      12. Use Cases
