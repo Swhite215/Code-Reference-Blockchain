@@ -283,4 +283,27 @@ Hyperledger Fabric Documentation
                 - Crash Fault Tolerant ordering service
                 - Leader and follower model
      11. Private Data
-     12. Use Cases
+        a. What is Private Data?
+            - Allows a defined subset of organizations on a channel the ability to endorse, commit, or query private data without having to create a separate channel
+        b. What is a Private Data Collection?
+            - Actual Private Data
+                - Data sent peer-to-peer via gossip protocol
+                - Stored in a private database on the peers of authorized orgs
+            - Hash of that Data
+                - Endorsed, ordered, and written to the ledgers of every peer on the channel
+                - Serves as evidence of the transaction
+            - When
+                - Use a channel when entire transactions and ledger must be kept confidential
+                - Use a collection when transactions and ledgers must be shared amomg a set of orgs, but only when a subset of those orgs should hvae acces to some or all of the data within a transaction
+        c. Transaction Flow
+            - Process
+                - Client application submits a proposal request to invoke a chaincode private data function
+                - Endorsing peers simulate the transaction and store the private data in a transient data store
+                - Endoring peers sends the proposal response back to the client, no private data, just hashes
+                - Client application submits the transaction to the ordering service, with hashes
+                - Transactions get included in blocks as normal
+                - Authorized peers use the collection policy to determine if they are authorized to have access to the private data
+                - If authorized, they check local transient data store to determine if tehy have recieved the private data.
+                - If not, they will attempt to pull the private data from an authorized peer
+                - Peers validate and move private data into their copy of private state database and private writeset storage
+                - Private data is then deleted from the transient data store
