@@ -14,13 +14,10 @@ To provide reference materials for a variety of topics encountered when building
 
 ### Non-Fungible Tokens (NFTs)
 
-##### NFT Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [NFT Overview](https://github.com/Swhite215/Code-Reference-Blockchain/tree/master/NFTs)
 
 ### Blockchain (BC)
-
-##### BC Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [BC Overview](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
 
