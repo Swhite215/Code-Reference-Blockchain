@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "ethers": "^5.5.4",
+    "mocha": "^9.2.1",
+    "web3": "^1.7.1"
+  }
+}

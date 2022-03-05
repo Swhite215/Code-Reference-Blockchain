@@ -1,0 +1,39 @@
+NFT Marketplace Insights
+
+    1. Polygon
+        - Ethereum scalability solution, faster processing, cheaper transactions
+
+    2. Project Dependencies
+        - node.js/npm - package managers
+        - npx - Executes <command> either from a local node_modules/.bin, or from a central cache, installing any packages needed in order for <command> to run
+        - truffle - Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. With Truffle, you get:
+        - @truffle/hdwallet-provider - HD Wallet-enabled Web3 provider
+        - @openzeppelin/contracts - library for secure smart contract development
+        - ethers - A complete Ethereum wallet implementation and utilities in JavaScript (and TypeScript)
+        - axios
+        - chai, chai-as-promised
+        - ipfs-http-client - A client library for the IPFS HTTP RPC API (/api/v0/*), implemented in JavaScript
+        - web3
+        - web3modal
+        - tailwindcsss, postcss
+        - autoprefixer
+
+    3. Project Setup
+        - Setup Mumbai-Testnet - https://docs.polygon.technology/docs/develop/network-details/network/
+            - Setup Node on MaticVigil for Public RPC
+            - Add Matic Mumbai to Truffle Config Networks - get URL from MaticVigil
+        - Configure Matic Main Network
+            - Add Matic Maain Network to Truffle Config Networks - get URL from MaticVigil
+        - Solidity Compiler Setttings
+            - Version 0.8.3
+            - Uncomment Settings
+
+    4. Create NFT Token Contract - contracts/NFT.sol
+
+    5. Create NFT Marketplace Contract - contracts/Market.sol
+
+    6. Writing Test Cases
+        - Run Tests
+            - Make Sure Ganache is Running
+            - sudo truffle compile
+            - sudo truffle test
