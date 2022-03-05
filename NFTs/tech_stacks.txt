@@ -1,0 +1,124 @@
+Blockchain Platforms - Ethereum
+
+    1. Ethereum
+        - Ethereum Clients
+            - Term for any piece of software that can conect to Ethereum and verify blocks
+            - Provide interfaces to submit a transaction
+            - Examples - Aleth, Geth, Parity
+            - Geth
+                - One of 3 original implementations
+                - CLI client to run an Etheruem node
+                - Written in Golang
+                - Running a node whens running EVM on computer, helps to perform a transaction
+                - Maintained by Ethereum community
+            - Parity
+                - Fastest and lightest Ethereum clinet
+                - Written in Rust
+                - Open-source software application allowing any person to run a node on the public Ethereum network
+        - Ethereum Test Networks
+            - Replica of real Ethereum blockchain network
+            - Users can test new ideas and solution
+            - Reveals exactly how a production functions or behaves
+            - All ethers are worth nothing
+            - Main Networks
+                - Ropsten - based on proof of work, supported by Geth and Parity, transaction validation is more accurate, enables mining of ether through Ropsten faucet
+                - Koavn - based on proof of authority, only selected nodes are allowed to create new blocks or validate transactions, supported by Parity and Infura
+                - Rinkeby - based on proof of authority, supports a ETH faucet, blocks created in 15 second intervals
+                - Goerli - aims to introduce cross-compability throgh the numerous Ethereum clients, proof of authority network, fairly reliable to ensure continuous connectivity and reliability
+
+Storage Platforms
+
+    1. IPFS - Interplanetary File System
+        - Goal - peer to peer data sharing system which store files and tracks all transactions,
+            - Distributed file system, similar to a single BitTorrent swarm
+            - Guarantees a more permanent and distributed web
+            - Uses content addressing system, using a hash on the file that equals the address
+            - IPFS tells you where a certain file is
+            - Distributed Hash Table - used for storing table
+            - User looking for data, downloads the data from the neighbor nodes
+        - Components
+            - Distributed Hash Table - keep track of the data, who has it, and where it is, values are data and keys are DIT
+                - Nodes - part of the network and store a portion of the DHT
+                - Kademlia/Providing - nodes can provide data and need to know where to get it, record tells them to provide the block
+                - IPFS Nodes - Public Internet WAN DHT and Local Network LAN DHT
+                - Nodes store some of the generated metadata with only part of the public DHT
+            - Data Distribution
+                - BitSwap - message based protocol having all the messages with want lists or blocks
+                    - Task - obtain blocks requested, sending blocks it has to other peers who want them
+                - Content Identifier - breaks up data into blocks, blocks sent to peers with want files, peers send block to its peer if they have want request as well
+            - Merkle Directed Acyclic Graph - regular DAG having nodes with an identifier, and this identifier is the result of hashing the node's contents using a hash function
+                - Data = Leaves, hash upwards to root
+                - Every node carries a payload, but no balance requirements
+                - Content addressings is referred to as identifying a data object by the value of its hash
+            - Version Control System
+                - Allows user to independently duplicate and edit multiple versions of a file, store these versions and later merge edits with the original file
+                - Entire file history can be retrieved
+                - IPFS objects are stored permanently
+                - Does not rely on internet protocols
+            - Self-Certifiying File System
+                - When files change, addresses change
+                - If a file is too big, it is broken into smaller chunks
+                - Mutable File System - tool built into IPFS that lets you treat files like you would a normal name based file system
+                - UnixFS - data format used to represent files and all their links and metadata
+        - Protocols
+            - Naming Protocol - self certifying mutable naming system
+            - Identities - manages node identiy verification and generation
+            - Network - manages connections to other peers, and uses various underlying network protocol
+            - Files - maintains a versioned file system hierarchy
+            - Routing - maintains information to locate peers and objects
+            - Objects - creates a Merkle DAG of content addressed immutable objects with links
+            - Block Exchange - governs efficient block distribution
+        - How does it work?
+            - Seeks to create a permanent and distributed web 
+            - Fundamentals
+                - Unique identification via content addressing i.e. a hash
+                - Distributed Hash Table enables content discovery
+                - Merkle DAG enables content linking
+
+NFT Protocols - Other Protocols
+
+    1. FA2
+        - Token standard for Tezos blockchain
+        - Unified token contract interface, supporting a wide range of token types
+        - Areas of Concern
+            - Token Type
+            - Permission Standardization
+        - Single smart contract for multiple tokens
+        - Enables creation of NFTs as well
+        - Token agnostic
+        - Trust
+            - Standardization of permissions
+            - Transfer Semantics
+            - How users access their balance
+            - Tokens, Metadata, and User Rights
+        - Smart Contracts
+            - Type of tokens or tokens
+            - Management of the token
+            - Minting and burning of tokens
+            - Contract upgrades
+            - Giving permissions for architectures
+        - Implementations of Permissions
+            - Monolith - permissions included in smart contract, less modular/flexible
+            - Wrapper - separate contract for permissions
+            - Transfer Hook - main contract calls a different contract that includes permisssion
+
+    2. dGoods
+        - Open-source and free standard for handling virtual items
+        - Key Features
+            - Open-Source
+            - Template can be used for 3D and 2D items
+            - Allows to combine tokens from different categories into a single token contract
+            - Can have replacable and non-replaceable tokens
+            - NFTs
+            - Certificate of Authenticitiy
+
+    3. TRC-721
+        - Token standard for developing NFTs on the TRON Blockchain
+        - Tron - decentralized blcockhain platform, free digital content
+        - TRC-721 - standard for issuing NFT on the TRON blockchain
+
+Front-End Frameworks
+
+    1. ReactJS
+    2. AngularJS
+    3. VueJS
