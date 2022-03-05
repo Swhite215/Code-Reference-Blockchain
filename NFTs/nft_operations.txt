@@ -1,0 +1,47 @@
+NFT Operations
+
+    1. Key Items
+        - Digital Wallet
+        - Crypto from a Crypto Exchange
+    
+    2. NFT Marketplaces
+        - OpenSea - Largest NFT Marketplace
+        - Rarible - ERC-20 RARI Token - Community Owned
+        - SuperRare - Single Edition Digital Artworks
+        - Foundation - Specialist platform for digital art
+        - AtomicMarket - Shared liquity NFT market
+        - MythMarket - Series of online marketplaces
+        - BakerySwap - Sutomated market maker and decentralized exchange for dcentralized finace 
+        - KnownOrigin - Discover and collect rare digital artwork
+        - Enjin Marketplace - Explore and share NFTs
+        - Portion - artist community, global network
+
+    3. Buying on OpenSea
+        - Create a Digital Wallet - MetaMask
+        - Buy Ether
+        - Shop NFTS
+
+    4. Create on OpenSea
+        - Click "Create"
+        - Connect Wallet
+        - Complete Form
+            - Supported File Types - JPG, PNG, GIF, SVG, MP4, WEbM, MP3, WAV, OGG, GLB, GLTF, Max Size 100MB
+
+    5. How to Sell NFTS
+        - Select Item
+        - Select "Sell"
+        - Complete Form
+        - Can include Royalties*
+
+    0. Notes
+        - We can use OpenSea on Rinkeby
+            - Select Profile
+            - Sign-In
+            - Change Network
+            - Accept OpeanSea Message to Switch Networks
+        - Collection
+            - Organizes Art
+        - Sellikng Options
+            - Set Price
+            - Highest Bid
+            - Bundle
