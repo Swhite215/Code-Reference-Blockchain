@@ -16,29 +16,17 @@ To provide reference materials for a variety of topics encountered when building
 
 ##### NFT Overview
 
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [NFT Overview](https://github.com/Swhite215/Code-Reference-Blockchain/tree/master/NFTs)
 
 ### Blockchain (BC)
 
 ##### BC Overview
 
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
-
-### Hyperledger (HL)
-
-##### HL Overview
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
-
-##### HLF Overview
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/HyperledgerFabric.txt)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [BC Overview](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
 
 ### Ethereum (ET)
 
-##### ET Overview
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/Ethereum.txt)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [ET Overview](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/Ethereum.txt)
 
 ##### ET Contracts
 
@@ -85,3 +73,8 @@ To provide reference materials for a variety of topics encountered when building
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Intermediate Testing](https://github.com/Swhite215/Blockchain/blob/master/Ethereum/lotteryContract/test/lottery.test.js)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Advanced Testing](https://github.com/Swhite215/Ethereum_Campaign_Project/blob/master/test/campaign.test.js)
+
+### Hyperledger (HL)
+###### &nbsp;&nbsp;&nbsp;&nbsp; [HL Overview](https://github.com/Swhite215/Blockchain/blob/master/Hyperledger.txt)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [HLF Overview](https://github.com/Swhite215/Blockchain/blob/master/HyperledgerFabric.txt)
