@@ -17,6 +17,17 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [NFT Overview](https://github.com/Swhite215/Code-Reference-Blockchain/tree/master/NFTs)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 NFT Smart Contract](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Game/token.sol)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 NFT Smart Contract w/ Counter](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Marketplace/contracts/NFT.sol)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 Marketplace Smart Contract](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Marketplace/contracts/Market.sol)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 Marketplace Truffle Config](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Marketplace/truffle-config.js)
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 Marketplace Tests](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Marketplace/test/test.js)
+
+
 ### Blockchain (BC)
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [BC Overview](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
