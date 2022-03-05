@@ -2,15 +2,21 @@
 
 Bitcoin, Blockchain, Ethereum, Hyperledger Fabric and Hyperledger Composer
 
-Client-Side: React
+Client-Side: ReactJS
 
-Server-Side: Node and Next.js
+Server-Side: NodeJS
 
 # Objective
 
 To provide reference materials for a variety of topics encountered when building and working with blockchain technologies
 
 ## Section Quick Link Access:
+
+### Non-Fungible Tokens (NFTs)
+
+##### NFT Overview
+
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/Blockchain.txt)
 
 ### Blockchain (BC)
 
@@ -27,60 +33,6 @@ To provide reference materials for a variety of topics encountered when building
 ##### HLF Overview
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Notes](https://github.com/Swhite215/Blockchain/blob/master/HyperledgerFabric.txt)
-
-##### HL Composer Modeling Language
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Example Models](https://github.com/Swhite215/Hyperledger_Models/tree/master/airlinev9/models)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Abstract](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Inheritance](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Concept](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.participant.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction Model](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Transaction Script](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/lib/script.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Event](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Import](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Relationship](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [String Validation](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.flight.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Number Validation](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/models/org.acme.airline.aircraft.cto)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Queries](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/queries.qry)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Access Control Language](https://github.com/Swhite215/Hyperledger_Models/blob/master/airlinev9/permissions.acl)
-
-##### HL Composer SDK and API
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Card Management](https://github.com/Swhite215/Hyperledger_API/blob/master/manage-cards.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Admin Connection](https://github.com/Swhite215/Hyperledger_API/blob/master/admin-connection.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Business Network Definition](https://github.com/Swhite215/Hyperledger_API/blob/master/update-bna.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Business Network Connection](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-connection-util.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Factory](https://github.com/Swhite215/Hyperledger_API/blob/master/bn-factory-submit-txn.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Registries](https://github.com/Swhite215/Hyperledger_API/blob/master/get-registries.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Resources](https://github.com/Swhite215/Hyperledger_API/blob/master/add-resources.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Queries API](https://github.com/Swhite215/Hyperledger_API/blob/master/client-query.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Subscription API](https://github.com/Swhite215/Hyperledger_API/blob/master/subscribe-event.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Subscription REST Server](https://github.com/Swhite215/Hyperledger_API/blob/master/subscribe-event-ws.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Unit Testing Structure](https://github.com/Swhite215/Hyperledger_API/blob/master/ut-harness.js)
-
-###### &nbsp;&nbsp;&nbsp;&nbsp; [Mocha Example Setup](https://github.com/Swhite215/Hyperledger_API/blob/master/mocha-demo.js)
 
 ### Ethereum (ET)
 
