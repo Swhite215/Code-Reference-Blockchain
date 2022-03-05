@@ -1,0 +1,155 @@
+Tokens Introduction
+
+1. What are Tokens?
+    - Definition - represents something of value
+    - Example - casino chips that represent money
+    - Example - a souvenir from a trip
+    - Example - airline miles
+    - Example - loyalty points
+    - Example - items in a game
+
+2. Crypto Tokens
+    - Blockchain - decentralized system with no single controller
+    - Tokens - a special kind of virtual currency tokens that reside on blockchains and represent an asset or utility
+    - Behavior - can be customized
+    - Benefits
+        - Usability - exchangeable
+        - Transparency - transfer and ownership verifiable and impossible to counterfeit
+        - Cost and Speed of Exchange - designed to faciliate large number of transactions
+
+3. How Crypto Token Works?
+    - Crypt applies to several encruption algorithm and encryption methods
+    - Cryptocurrencies are online payment schemes
+    - Actions
+        - Token is issued
+        - People purchase tokens
+        - Transaction recorded
+        - Tokens provide ownership information
+        - Company pays out dividends
+
+4. Types of Crypto
+    - Altcoins - derived from bitcoin - namecoin, peercoin, auroracoin, doge coin
+    - Tokens - native blockchain - ethereum, ripple
+
+5. Token Classificaiton
+    - Purpose - cryptocurrencies, network, investment
+    - utility - usage, work, hybrid
+    - Legal - utility, security, crypto
+    - Underlying Value - asset backed, network value, share-like
+    - Technical Layer - cryptocurrencies, networks, investment
+
+6. Broad Categories
+    - Fungible Tokens
+        - Interchangeable with any asset or entity of same value
+        - Cryptocurrencies and monetary value
+        - Value same for older and person traded
+        - ERC-20 for fungible tokens
+        - Payments/balances
+    - Non-Fungible Tokens
+        - Hold data and are unique
+        - Don't inherit any value
+        - ERC-721 for non-fungible tokens
+        - Represent owner's unique asset
+
+Ethereum Tokens
+
+1. ERC Standards
+    - Ethereum Request for Comments - lay out principles that ethereum based tokens must follow in these documents
+    - ERC-20 - define token protocols
+    - Benefits
+        - Provide libraries to follow DRY
+        - Help deploy smart contracts to deal with standard like application quickly
+        - Help building qizards and oracle networks on top of a smart contract application
+    - Creation Process
+        - Developers submit new ERC policies through Ethereum Improvement Proposal
+        - Ethereum community reviews the document
+        - Community may ask for revision
+        - Developers implement policies
+
+2. Standards
+    - ERC-20 - defines fungible tokens and protocols, guidelines for development
+    - ERC-165 - standardizes interfaces
+    - ERC-223 - prevents accidental burns of tokens, a bug in ERC 20, to accept or decline tokens arriving at smart contract address
+    - ERC-621 - can modify, increase or decrease, token supply
+    - ERC-721 - standard for non-fungible tokens
+    - ERC-777 - allows user to reject receiving tokens from a blacklisted address
+    - ERC-827 - facilitates token transfer for a third party to spend it
+    - ERC-884 - tokenizes stocks, requires an off-chain database or Know Your Customer
+
+3. ERC-20 Standards
+    - Signifies any two tokens built on it have the same value
+    - API is defined and used in the smart contract
+    - Properties
+        - Makes asset interchangeable
+        - Used on projects, platforms, and exchanges
+        - Compatability with dApps
+        - Communicates with other currencies
+    - Trading
+        - Platforms - regular exchanges, decentralized exchanges, automated liquidity pool
+
+4. ERC-721 Standards
+    - Non-Fungible Tokens
+    - Interface that any smart contract that creates 721 tokens has to implement
+    - Interactions
+        - Finding owner address of token
+        - Approving transfer of token
+        - Checking approved addresses of a token
+        - Transfering the token
+    - Domains
+        - Gaming - used to represent gaming tokens
+        - Collectibles- football cards to crypto kitties
+        - Utilities - can enable their owners to access resources
+    - Trading
+        - Automated market making algorithms are not possible
+        - Standard way to trade is to sell or auction
+
+5. ERC-1155 Token
+    - Multi-token functionality that can store tokens that can behave as ERC-20 or ERC-721 tokens
+    - Smart contract interface to control fungible or non-fungible token
+    - Actions
+        - Mass transfers as standard - can transfer several tokens in same operation
+        - Multiple tokens supported in the same contract
+        - Integrated token type detection
+        - Secure token transfer
+
+Understanding the Non-Fungible Tokens
+
+1. Background
+    - Fungible - something that can be replaced with something similar
+    - Non-Fungible - unique and non interchangeable
+    - Tokens - different forms and use cases
+    - Fungibility - required for any currency, because most currencies are a medium of exchange
+
+2. What are Non-Fungible Tokens?
+    - Action - provvie authenticity and ownership of an asset using cryptography
+    - Example of how a token can be used to create scaricty, which results in the creation of value for that token
+
+3. Properties
+    - Uniqueness - contain code that describes properties that make them unique e.g. pixels, ownership
+    - Traceaability - has a record of transactions, from creation to present, including every time it changed hands
+    - Rareness - to be attractive, should probably be scarce
+    - Indivisible - NFTs mostly cannot be transacted as fractions of a whole
+    - Programmability - fully programmable due to smart contracts
+
+4. NFT Examples
+    - Scope - anything unique that needs provable ownership
+
+5. How do NFTs work?
+    - Stored on a blockchain, which is a decentralized ledger
+    - NFT is minted from digital objects that represent tangible and intangible elements
+    - NFTs are similar to physical collectibles, but they are digital
+    - Simple to check onwership and pass tokens amongst owners
+    - Properties
+        - Each token minted has a unique identifier
+        - Not directly exchangeable with other tokens
+        - Each token has a verifiable owner
+        - Can be bought and sold on any Ethereum based market
+        - No one can manipulate your NFT
+        - Can sell the NFT, or hold it forever
+        - Can prove you are the NFT creator
+        - Can determine scarcity
+        - Can earn royalties
+
+6. What are NFTs used fo?
+    - Enabling artists and content developers to monetize their work
+    - Digital content, gaming items, domain names, physical items, investment and collateral
