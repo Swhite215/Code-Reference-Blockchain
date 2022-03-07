@@ -1,0 +1,39 @@
+NFT Bookstore Insights
+
+    1. ERC 1155
+        - Mint multiple types of tokens with the same smart contract
+
+    2. Metadata
+        - MetaData Standards for OpenSea - https://docs.opensea.io/docs/metadata-standards
+            - image - url to the image of the item
+            - image_data - raw SVG image data
+            - external_url - appear below the asset's image on OpenSera and will allow users to leave OpenSea
+            - description
+            - name
+            - attribute
+                - trait - name of the trait
+                    - Numeric - number, boost_percentage, boost_number
+                    - Date - unix timestamp
+                    - 
+                - value - value of the trait
+                - display_field - how you would like it displayed
+            - background_color - six character hexadecimal
+            - animation_url - url to a multi-media attachment for the item - GLTF, GLB, WEBM, MP4, M4V, OGV, and OGG, also supportes HTML pages
+            - youtube_url
+        - IPFS - format is ipfs://hash
+
+    3.IPFS
+        - How to Publish Image and JSON File
+            - Download IPFS CLI
+            - Run IPFS Executable
+            - Paste WEB UI Link in Chrome
+            - In IPFS UI - Go to Files, Hit Import, Select Image File
+            - Pin the image file to node, this important data will be saved to that node
+            - Update JSON with URL to Image File on IPFS
+            - In IPFS UI - Go to Files, Hit Import, Select JSON File
+            - Pin the image file to node, this important data will be saved to that node
+        - Pinata Cloud - IPFS Pinning Service
+            - Sign Up
+            - Upload Image and JSON Files
+            - Pin in IPFS UI
+            - Go to Pin Explorer on IPFS UI
