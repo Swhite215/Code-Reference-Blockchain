@@ -37,3 +37,28 @@ NFT Marketplace Insights
             - Make Sure Ganache is Running
             - sudo truffle compile
             - sudo truffle test
+
+    7. Migrating Contracts on Development and Mumbai Test Network
+        - truffle migrate - deploys to ganache as development
+    
+    8. Building Client Side Application Part One
+        - Address - where contracts are deployed
+        - ABI - interface for contracts, json format
+        - Ethers - use utils to format units, 
+        - Web3 - create web3 instance to get blockchain network information, create instance of contract, call methods on contract
+            - tokenContract.methods.tokenURI(tokenID).call() to get tokenURI
+            - Use axios to make a request to that URL for the token meta information
+        - Web3Modal - looks for a web3 provider being injected into the browser and connects with it
+    
+    9. Building Client Side Application Part Two
+        - IPFS - decentralized server to save files
+        - How to create NFT and save on IPFS*
+    
+    10. Creating User Dashboard for NFT Marketplace Application
+        - How to Load a User's Assets
+
+    11.Deployment on Polygon Mumbai Network
+        - Configure in Truffle Config Networks
+        - truffle migrate --network maticmumbai - to compile and migrate to mumbai
+        - Update ETH to MATIC to display correct currency
+        - 
