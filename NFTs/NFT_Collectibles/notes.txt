@@ -1,0 +1,12 @@
+NFT Collectibles Insights
+
+    1. Prerequisites
+        - ChainLink 
+            - LINK Token Contracts
+                - Inherits functionality from ERC20 and allows token transfers to contain a data payload
+                - Used to pay operators for retrieivng data for smart contracts
+                - Pay for deposits placed by node operators as required by contract creators
+        - Infura
+            - Log In, Create Project, Get Project ID
+
+    2. 
