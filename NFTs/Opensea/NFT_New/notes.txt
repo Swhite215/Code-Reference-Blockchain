@@ -1,0 +1,59 @@
+1. Structuring Your Smart Contract
+    - Smart Contract
+        - Adhere to Open Zeppelin ERC 721
+    - Create ERC721 Contact
+        - baseTokenURI - map tokenId to some metadata off-chain
+    - Opensea Whitelisting
+        - ERC721Tradable and ERC1155Tradable contracts whitelist the proxy accounts of OpenSea users so they are automatically able to trade any item on OpenSea
+        - On OpeanSea, each user has a proxy account that they control and is ultimately called by the marketplace contracts to trade their items
+    - Using Ownable - IMPORTANT
+        - Provides basic access control mechanisms, establishes concept of a contract owner, who can be granted exclusive access to certain function within the contract
+    - Deploying the Contract
+        - Alchemy - Blockchain developer platform
+        - Deploy with truffle deploy
+    - Minting Your Tokens
+        - Get contract address on Rinkeby from truffle deploy output command
+        - Run node scripts/mint.js
+
+2. Adding Metadata
+    - baseTokenURI(), should return URI of metadata
+    - Deploy contract, mint NFTs
+
+3. Viewing Your Items on OpeanSea
+    - Opensea Test Environment - testnets.opeansea.io - RINKEBY
+    - URL - https://testnets.opensea.io/assets/<asset_contract_address>/<token_id>
+    - URL - Update Item - https://testnets-api.opensea.io/api/v1/asset/<your_contract_address>/<token_id>/?force_update=true
+
+4. Debugging Your Metadata
+    - URL - Validate - https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/ 
+
+5. Create Your Collection
+    - Opensea Collection Creator - populate all of your assets on OpenSea and give you a dedicated page
+
+6. Auctioning an Item
+    - Go to item and select sale
+    - Select make offer to bid
+    - You can sell a bundle
+    - You can run an eBay style auction
+    - You can sell items in tokens other than ETH
+
+7. Launching on Mainnet
+    - ENV network = mainnet
+    - truffle --network live
+
+8. Customizing Your Collection
+    - Must have token as OWNABLE
+
+9. Running an Initial Item Sale
+    - Option 1: Simple Item Sale
+        - Initial Item Offering - Mint into an account, sell them off using standard auction flow, show up in OpenSea feed
+    - Option 2: Custom Sale Contract
+        - Opensea Crowdsale Tutorial: https://docs.opensea.io/docs/opensea-initial-item-sale-tutorial
+            - Actions - sell packs, airdrop rewards, tradeable loot boxes
+
+10. Setting Fees on Secondary Sales
+    - Setting Fee - in collection, adjust percentage fee field under royalty section and include a payout address
+    - Receiving Revenue - distributed in bulk once a month to the payment address specified
+
+11. Embedding Collection in Your Own Site
+    - Embed Instructions - https://docs.opensea.io/docs/embeds
