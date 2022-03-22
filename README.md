@@ -27,6 +27,8 @@ To provide reference materials for a variety of topics encountered when building
 
 ###### &nbsp;&nbsp;&nbsp;&nbsp; [Basic ERC-721 Marketplace Tests](https://github.com/Swhite215/Code-Reference-Blockchain/blob/master/NFTs/NFT_Marketplace/test/test.js)
 
+###### &nbsp;&nbsp;&nbsp;&nbsp; [Opeansea Developer's Walkthrough](https://github.com/Swhite215/Code-Reference-Blockchain/tree/master/NFTs/Opensea/NFT_New)
+
 
 ### Blockchain (BC)
 
