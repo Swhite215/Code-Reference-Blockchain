@@ -12,3 +12,9 @@ task("deploy", "Deploys the NFT.sol contract").setAction(async function (taskArg
     const nft = await nftContractFactory.deploy();
     console.log(`Contract deployed to address: ${nft.address}`);
 });
+
+task("deploy-limited", "Deploys the LimitedNFT.sol contract").setAction(async function (taskArguments, hre) {
+    const nftContractFactory = await hre.ethers.getContractFactory("LimitedNFT", getAccount());
+    const nft = await nftContractFactory.deploy();
+    console.log(`Contract deployed to address: ${nft.address}`);
+});
