@@ -98,3 +98,33 @@
             - npx hardhat set-base-token-uri --base-url "https://bafybeif6iuokmmcuwj7jgscybx3gvlcwkb6ybspwcduivl7mbqmgmmxubi.ipfs.dweb.link/metadata/"
             - npx hardhat mint --address 0xb43a1a6Ec7296399A616799dDA782a1112EA24fA
             - npx hardhat token-uri --token-id 1
+    - Verifying on Etherscan
+        - Import hardhat-etherscan inside hardhat config file
+        - Sign up for Etherscan
+        - Create an API Key
+        - Add API Key to .env file
+    - Setting a Token Supply Limit
+        - Add require in mintTo that checks against a total supply counter
+    - Setting a Price for Minting NFT
+        - Add MINT_PRICE
+        - Require msg.value to be MINT_PRICE inside payable mintTo
+    - Withdrawing Funds
+        - Use OpenZeppelin PullPayment solution
+            - Import and inherit
+            - Now contract has withdrawPayments(payee) function
+    - Roles and Access
+        - Ownable
+            - onlyOwner modifier - only th eowner will be able to call the function
+            - renounceOwnership(), transferOwnership(), isOwner()
+
+13. Run Limited NFT
+    - Add LimitNFT.sol contract with overridden functions - contracts/LimitedNFT.sol
+        - Overriding ERC721 - https://docs.openzeppelin.com/contracts/3.x/extending-contracts
+    - Compile updated smart contract - npx hardhat compile
+    - Update deploy.js with task to deploy LimitedNFT smart contract - scripts/deploy.js
+    - Deploy LimitedNFT smart contract - npx hardhat deploy-limited
+    - Update contract address in .env
+    - Update mint.js with tasks to set token uri, mint, and retrieve token uri for LimitedNFT - mint.js
+    - Set base token uri for LimitedNFT - npx hardhat set-base-token-uri-limited --base-url "https://bafybeic42autrenkz3etcbhonbpxtso75p5ygjwsugixhi5xzvnlbfputq.ipfs.dweb.link/metadata/"
+    - Mint LimitedNFT - npx hardhat mint-limited --address 0xb43a1a6Ec7296399A616799dDA782a1112EA24fA
+    - Obtain token URI for LimitedNFT - npx hardhat-limited token-uri --token-id 1
