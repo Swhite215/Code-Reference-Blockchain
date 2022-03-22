@@ -80,4 +80,21 @@
         - Add Minting Task - mint.js
         - Add helper to get contract - helpers.js
         - Import task file into hardhat.config.js so it is picked up
-        - 
+    - Adding Metadata and Payments
+        - Having a setBaseTokenURI() - allows you to update the metadata as you see fit
+        - IPFS CAR - Content Addressable aRchives
+            - Pack image into IPFS CAR - npx ipfs-car --pack images --output images.car
+        - NFT Storage Files
+            - Upload Car to IPFS using NFT Storage Files
+        - Create Metadata - simple JSON object - metadata/1
+            - Create CAR of metadata
+                - npx ipfs-car --pack metadata --output metadata.car
+            - Upload Car to IPFS using NFT Storage Files
+        - Add MetaData Update Task to Hardhat - mint.js
+        - Run Update
+            - npx hardhat compile
+            - npx hardhat deploy
+            - . .env
+            - npx hardhat set-base-token-uri --base-url "https://bafybeif6iuokmmcuwj7jgscybx3gvlcwkb6ybspwcduivl7mbqmgmmxubi.ipfs.dweb.link/metadata/"
+            - npx hardhat mint --address 0xb43a1a6Ec7296399A616799dDA782a1112EA24fA
+            - npx hardhat token-uri --token-id 1
