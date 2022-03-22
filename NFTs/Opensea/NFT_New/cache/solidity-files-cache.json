@@ -402,6 +402,44 @@
       "artifacts": [
         "IERC165"
       ]
+    },
+    "/Users/swhit210/E.C.R.I.C_Development/Code-Reference-Blockchain/NFTs/Opensea/NFT_New/contracts/LimitedNFT.sol": {
+      "lastModificationDate": 1647961849042,
+      "contentHash": "e9049d627d640a6ec7cc3bb926fbae91",
+      "sourceName": "contracts/LimitedNFT.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "0.8.1"
+      ],
+      "artifacts": [
+        "LimitedNFT"
+      ]
     }
   }
 }
