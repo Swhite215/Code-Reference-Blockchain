@@ -73,4 +73,11 @@
     - Minting
         - Hardhat Tasks - https://hardhat.org/guides/create-task.html
         - Update deploy.js to use tasks
+        - Import task file into hardhat.config.js so it is picked up
+        - Add helpers to helpers.js
+        - Run tasks using Hardhat CLI
+            - npx hardhat <task> <arguments>
+        - Add Minting Task - mint.js
+        - Add helper to get contract - helpers.js
+        - Import task file into hardhat.config.js so it is picked up
         - 
