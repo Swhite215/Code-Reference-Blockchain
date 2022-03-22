@@ -57,3 +57,20 @@
 
 11. Embedding Collection in Your Own Site
     - Embed Instructions - https://docs.opensea.io/docs/embeds
+
+12. Sample Project
+    - Setting Up
+        - Dependencies - package.json
+        - Run Hardhat - npx hardhat
+            - Create an empty hardhat.config.js
+            - hardhat.config.js - config file where we can define our blockchain configureation variables such as network and accounts
+        - Obtain Alchemy API Key 
+        - Update hardhat.config.js
+        - Compile smart contract - npx hardhat compile
+        - Create deploy script - scripts/old_deploy.js
+        - Deploy smart contract to testnetwork - npx hardhat run scripts/old_deploy.js --network rinkeby
+        - Deploy smart contract to mainnet - npx hardhat run scripts/old_deploy.js --network ethereum
+    - Minting
+        - Hardhat Tasks - https://hardhat.org/guides/create-task.html
+        - Update deploy.js to use tasks
+        - 
