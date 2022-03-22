@@ -2,19 +2,19 @@
    "attributes" : [
       {
          "trait_type" : "level",
-         "value" : 3
+         "value" : 100
       },
       {
          "trait_type" : "stamina",
-         "value" : 11.7
+         "value" : 200
       },
       {
          "trait_type" : "personality",
-         "value" : "sleepy"
+         "value" : "joyful"
       },
       {
          "display_type" : "boost_number",
-         "trait_type" : "aqua_power",
+         "trait_type" : "fire_power",
          "value" : 30
       },
       {
@@ -28,8 +28,8 @@
          "value" : 1
       }
    ],
-   "description" : "Friendly OpenSea Creature that enjoys long swims in the ocean.",
+   "description" : "Friendly Star Creature that enjoys long walks in the galaxy.",
    "external_url" : "https://example.com/?token_id=2",
-   "image" : "https://storage.googleapis.com/opensea-prod.appspot.com/creature/2.png",
-   "name" : "Boris McCoy"
+   "image" : "https://bafybeigk4nljvpsnk7vzwnfick3b3zeln5imjgpry7ejfkytabzk44s2ne.ipfs.nftstorage.link/images/star.png",
+   "name" : "Shiny Star"
 }
