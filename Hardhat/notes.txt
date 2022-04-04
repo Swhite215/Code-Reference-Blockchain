@@ -22,6 +22,18 @@ Hardhat
     - Create contracts directory - mkdir contracts
     - Create contract - touch contracts/Token.sol
     - Compile contract - npx hardhat compile
+    - Compile artificats are saved in the artifacts directory
+    - Force compile - npx hardhat compile --force or npx hardhat clean
+    - Configure compiler by updating solidity field in hardhat.config.js
+    - Multiple solidity versions - add compilers: [{version: ""}]
+    - Artifacts
+        - Artifact - all information necessary to deploy and interact with contract - artifacts/contracts/Contract.sol
+            - contract name, abi, bytecode, deployedByteCode, linkReferences, deployedLinkReferences
+        - Debug - all information necessary to reproduce compilation and to debug the contracts - artifacts/contracts/Contract.dbg.sol
+    - Build Info Files
+        - Compile information for builds, should not interact with
+    - Reading Artifacts
+        - Hardhat Runtime Environment - artifacts object with helper methods
 
 5. Testing Smart Contracts
     - Create test Directory - mkdir test
@@ -37,6 +49,7 @@ Hardhat
             - Owner of the token who gets the entire supply is the account that makes the deployment, using hardhat-ethers plugin, ContractFactory and Contract instances are connected to the first signer by default
         - expect() - chai assertion
     - .connect() - to connect to contract as different account and perform transactions
+    - Parallel - run tests in parallel - npx hardhat test --parallel
 
 6. Debugging
     - Import logging in smart contract - import "hardhat/console.sol";
@@ -49,8 +62,43 @@ Hardhat
     - Run script and connect to specified network - npx hardhat run scripts/deploy.js --network <network-name>
     - Deploy to Remote (Mainnet, Polygon, Testnet)
         - Add network entry to hardhat.config.js
+
+8. Running Script
+    - Create Script - scripts/sample-script.js
+    - Run Script - node scripts/sample-script.js
+    - Script Environment Variables
+        - HARDHAT_NETWORK - set network to connect to
+        - HARDHAT_SHOW_STACK_TRACES - enables JS stack traces of expected errors
+        - HARDHAT_VERBOSE _ enabels hardhat verbose logging
+        - HARDHAT_MAX_MEMORY - sets maximum amount of memory that hardhat can use
+
+9. Using Hardhat Console
+    - Run Console - npx hardhat console
+    - Note - compile task is called before opening prompt
+    - Execution environment is the same as for tasks, compiled, and HRE is initialized and injected
+    - Objects
+        - Config, ethers, artifacts
+    - Use await as operations are asynchronous
+
+10. Tasks
+    - See Tasks - npx hardhat
+    - Add Tasks - hardhat.config.js example
+    - See parameters - npx hardhat help <task>
+    - task(name, description, fn)
+        - fn(taskArguments, hre, runSuper)
+            - taskArguments - object with parsed CLI arguments
+            - hre - Hardhat Runtime Environment
+            - runSuper - only relevant if you are overriding an existing task
+    - Defining Parameters
+        - task().addOptionalParam()
+        - task.addParam(name, description, number, type)
+    - Type Validations
+        - Hardhat takes care of validating and parsing the values provided for each parameter
+    - Overriding Tasks
+        - Defining a task with the same name as an existing one will override the existing one
+        - runSuper - fn available to override a task's actions
+    - Subtasks
+        - Example for Compile - compile:get-source-paths, compile:get-dependency-graph, compile:build-artifacts
         - 
 
-
-X. Tasks
 X. Plugins
