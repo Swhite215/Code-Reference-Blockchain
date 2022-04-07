@@ -101,4 +101,17 @@ Hardhat
         - Example for Compile - compile:get-source-paths, compile:get-dependency-graph, compile:build-artifacts
         - 
 
-X. Plugins
+11. Plugins
+    a. EthersJS Plugin
+        - Install - npm install --save-dev @nomiclabs/hardhat-ethers 'ethers@^5.0.0'
+        - Add to Hardhat Config - require("@nomiclabs/hardhat-ethers");
+        - Hardhat Helpers
+            - getContractFactory()
+            - getContractAt()
+            - getSigners()
+            - getSigner()
+            - getContractFactoryFromArtifact()
+            - Note - the Contract(s) and ContractFactory(s) returned by these helpers are connected to the first signer returned by getSigners by default
+        - Usage
+            - Install and use
+                - ethers.METHOD
