@@ -1,0 +1,92 @@
+Ethers
+
+1. Overview
+    - Provider - class which provides an abstraction for a connection to the Ethereum Network
+    - Signer - in some way has direct or indirect access to a private key, which can sign messages and transactions to authorize the network to charge your account ether to perform operations
+    - Contract - abstraction which represents a connection to a specific contract on the Ethereum Network
+
+2. Connecting to Ethereum - MetaMask
+    - Example Code - ethers/src/App.js
+
+3. Connecting to Ethereum - RPC
+    - Example Code - ethers/src/App.js
+
+4. Signer API (Wallet, JsonRpcSigner)
+    - connect() - 
+    - getAddresss() - returns account address
+    - isSigner() - returns true if object is signer
+    - getBalance() - returns balance of wallet
+    - getChainID() - returns chainID wallet is connected to
+    - getGasPrice() - returns current gas price
+    - getTransactionCount() - returns number of transactions account has sent
+    - call() - returns result of calling using the transaction request, with this account as the from field
+    - estimateGas() - returns result of estimating cost to send the transaction request
+    - signMessage() - sign a message with private key
+    - signTransaction() - sign transaction with priavte key
+    - sendTransaction() - send transaction
+
+5. Wallet Signer API
+    - New - ethers.Wallet() - create a new wallet instance
+    - createRandom() - create a new wallet with random private key
+    - fromEncryptedJSON() - create a wallet by decrypting encrypted json
+    - fromMnemonic() - create a wallet from a mnemonic
+    - address - address for this account
+    - providfer - provider wallet is connected to
+    - publicKey - public key
+    - encrypt() - encrypt wallet using password
+
+6. Contract API
+    - New - ethers.Contract() - create a new instance of a contract attached to address
+    - connect() - create a new instance conected to provider or signer
+    - address - contract address
+    - deployTransaction - transaction used to deploy contract
+    - interface - abi
+    - provider
+    - signer
+    - Events
+        - listeners() - return list of listeners 
+        - off() - unsubscribe listener to event
+        - on() - subscribe to event calling listener when the event occurs
+        - once() - subscribe ojnce to event calling listener when the event occurs
+        - removeAllListeners() - unsubscribe all listeners for event
+
+7. Transactions
+    - Transaction Request Object
+        - to - address to
+        - from - address from
+        - nonce - number of transactions ever sent from this address
+        - data - tx data
+        - value - amount in wei being sent
+        - gasLimit - maximum amount of gas transaction can use
+        - gasPrice - price per unit of gas this transaction will pay in wei
+        - chainId
+    - Transaction Response Object
+        - blockNumber
+        - blockHash
+        - timestamp
+        - confirmations
+        - raw - serialized transaction
+        - wait() - resolves to the transaction receipt once the transaction has been included in the chain
+    - Transaction Receipt
+        - to - address to
+        - from - address from
+        - contractAddress - address created by contract
+        - transactionIndex - index of transaction
+        - gasUsed
+        - effectiveGasPrice
+        - logsBloom
+        - blockHash
+        - transactionHash
+        - logs
+        - blockNumber
+        - confirmations
+        - status
+
+8. Querying the Blockchain
+    - Example - ethers/src/App.js
+
+9. Writing to the Blockchain
+    - Example - ethers/src/App_RPC.js
+
+10. Contracts
+    - Contract - 
