@@ -1,0 +1,76 @@
+IPFS
+
+1. How IPFS Works?
+    - When you add a file to IPFS, your file is split into smaller chunks, hashed, and given a unique fingerprint called a content identifier
+    - The CID acts as a permanent record of your file as it exists at that point in time
+    - When nodes look up your file, they ask their peer nodes whos storing the content referenced by the file's CID
+    - When others view your file, they cache a copy, and become another provider of your content until their cache is cleared
+    - A node can pint content in order to keep and provide it forever, or discard content it hasn't used in a while to save space
+    - Files stored on IPFS are resistant to tampering and censorship
+    - Any changes to a file dont overwrite the original, and common chunks across files can be reused
+    - IPFS can find the latest version of your file using the IPNS decentralized naming system
+
+2. What is IPFS
+    - What - Interplanetary File System - peer to peer network protocol for storing and sharing data in a distributed file system, which addressed based on content, not location
+
+3. IPFS Course
+    - Content Addressing on the Decentralized Web - Location Addressing vs Content Addressing
+        - Location Addressing - Uniform Resource Locators
+            - Who - Authorities
+            - Problems
+                - URLs indicate which authority we should go to for the data
+                - Hard to verify URL provides what is indicated
+                - Redundancy   
+        - Content Addressing - Hashing
+            - Who - everyone
+            - Benefits
+                - Hashs can be derived from the content of the data itself
+                - Hashes are unique
+                - Hashes can prevent malicious actors from deceiving us about the content of files
+        - Hashing and Content Identifiers CIDs
+            - Decoding Data Structures
+                - Content Addressing can be used on all types of data
+                - Content Identifier is a particualr form of content addressing used on the decentralized web
+                - CID - contans a hash and a codec
+                    - Codec - encode nad decode data in certain formats
+                    - Multihash - self describing hash, tells you what type of function was used to create it
+    - Merkle DAGs: Structuring Data for the Distributed Web
+        - Advantages of Properly Structured Data
+        - Directed Acyclic Graphs
+            - Directed Graphs - each edge has some direction
+                - Root- no parent, Leaf - parent
+            - Acyclic Graphs - no loops in the graph
+            - Directed Acyclic Graphs - directed and acyclic
+        - Introducing Merkle DAGs
+            - First, encode the leaf nodes of the graph, lowest level i.e. file, and give each a CID, each contains filename and content
+            - Intermediate nodes contain list of CIDs that make it up, and a name, encoded and given a CID
+            - Each node's CID depends on every single one of its descendants
+            - A node's CID only changes in response to a change in its own data or that of its descendants
+        - Merkle DAGs: Verifiability
+            - An individual who retrieves data using a content address can always compute the CID
+            - DAGs are recursive data structures 
+            - Any node can be a root node
+        - Distributability
+        - Deduplication
+    - libp2p
+        - Why do we need LIBP2P?
+            - Web 2.0 - issues with security and connectivity
+            - Location Addressing vs Content Addressing
+            - Networks are Complex
+                - Firewalls, NAT, High Latency Networks, Reliability, Roaming, Censorship, Runtimes, Innovation is Slow, Data Privacy
+        - Curernt Problem with P2P
+            - Peer - a participant in a decentralized network
+            - Peer-to-Peer - a decentralized network in which workloads are shared between peers
+            - Reinventing the Wheel
+                - Discoverability - how can two or more peers find each other and share information?
+        - LIBP2P
+            - Focused on process addressing i.e. finding, connecting, and authenticating any data transfer processes in the network
+            - Modularity
+                - Transports, Stream Muxers, Crypto Channels, Discovery, Peer Routing, Record Stores, NAT Traversal, Connection and Connection Upgrades, Gnereal Purpose Utils and Datatypes, Others
+            - Transport - protocols that define how data is transferred
+                - js-lib2p-tcp*
+        - LIBP2P in the Open Ssytems Interconnection Model
+            - Please Do Not Throw Sausage Pizza Away - Physical Data Network Transport Session Presentation Application
+        - Multiple Environments Supported
+            - js-libp2p
+        - Applications and Services Using LIBP2P
