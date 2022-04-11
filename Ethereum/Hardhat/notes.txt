@@ -99,7 +99,6 @@ Hardhat
         - runSuper - fn available to override a task's actions
     - Subtasks
         - Example for Compile - compile:get-source-paths, compile:get-dependency-graph, compile:build-artifacts
-        - 
 
 11. Plugins
     a. EthersJS Plugin
