@@ -69,8 +69,49 @@ IPFS
                 - Transports, Stream Muxers, Crypto Channels, Discovery, Peer Routing, Record Stores, NAT Traversal, Connection and Connection Upgrades, Gnereal Purpose Utils and Datatypes, Others
             - Transport - protocols that define how data is transferred
                 - js-lib2p-tcp*
-        - LIBP2P in the Open Ssytems Interconnection Model
+        - LIBP2P in the Open Systems Interconnection Model
             - Please Do Not Throw Sausage Pizza Away - Physical Data Network Transport Session Presentation Application
         - Multiple Environments Supported
             - js-libp2p
         - Applications and Services Using LIBP2P
+    - Regular Files API
+        - Introducing the Files API
+            - Files API vs DAG API
+                - DAG API - unique and versatile primitive data structures offered by InterPlanetary Linked Data
+                - DAG API - generic and flexible approach to adding data to the IPFS node, but not most efficient when working with files
+                - Files API - custom built for preparing files to be placed in the network and ensures that IPFS knows how to access them and handle them efficiently
+                - Files API - Regular Files API and Mutable File System
+            - Regular Files API vs. MFS Files API
+                - MFS - API to replicate file system operations like mkdir, ls, cp and others
+                - Regular Files API - add, cat, get, and ls
+                    - ipfs.someMethod()
+            - Working with Files in ProtoSchool
+                - File Object
+                    - name, lastModified, size, type
+                - Add a File
+                    - Note - ProtoSchool tutorials creates a new IPFS node in the browser each time
+                    - ipfs.someMethod() - ipfs refers to your IPFS instance, also known as a node
+                    - Note - file will only remain available as long as someone who has it, is connected to the network
+                    - ipfs_examples.jj
+                - Add Multiple Files
+                    - ipfs_examples.js
+                - Key Process
+                    - Host Node Locally and Run Daemon
+            - Read the Contents of a File
+                - ipfs_examples.js
+                    - ipfsPath - IPFS path or CID
+                - Note - performance issues are possible with huge files, we may want to process chunks iteratively
+            - Add Files in a Directory
+                - wrapWithDirectory() - provide a path and filename for the added files to create CIDs for individual files and a CID for the containing directory
+                    - path - string for path including the file name
+                    - content - file object
+                - Directories are Immutable
+            - List the Files in a Directory
+                - ipfs_examples.js
+            - Read a File in a Directory
+                - Options
+                    - ipfs.cat(CID)
+                    - ipfs.cat(FULL IPFS PATH)
+                    - ipfs.cat(IPFS PATH + FILE PATH)
+                    - ipfs.cat(IPFS PATH + DIRECTORY + FILE PATH)
+                - 
