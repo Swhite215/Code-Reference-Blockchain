@@ -28,7 +28,7 @@ app.post('/upload-file/:fileName', async (req, res) => {
     let file = await readFileAsync(filePath);
 
     // Add File to IPFS
-    let result = await node.add(file);
+    let result = await node.add(file, { pin: true });
 
     // Log Results
     console.log(`Added File CID: ${result.cid}`);
