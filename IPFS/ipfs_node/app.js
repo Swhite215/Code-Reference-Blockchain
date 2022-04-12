@@ -9,6 +9,7 @@ const path = require("path");
 const fs = require("fs");
 const util = require('util');
 const readFileAsync = util.promisify(fs.readFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // IPFS Requires
 const IPFS = require("ipfs");
@@ -33,12 +34,14 @@ app.post('/upload-file/:fileName', async (req, res) => {
     console.log(`Added File CID: ${result.cid}`);
 
     // Test Getting File Chunks and Converting to String
-    const chunks = [];
-    for await (const chunk of node.cat(result.cid)) {
-        chunks.push(chunk);
-    }
+    const bufferedContents = await toBuffer(node.cat(result.cid));
+    const string = new TextDecoder().decode(bufferedContents);
 
-    console.log("File Contents:", uint8ArrayConcat(chunks).toString());
+    console.log("File Contents:", string);
+
+    // Write File
+    let writeFilePath = path.join(__dirname + "/" + "writeTest" + ".txt");
+    let writtenFile = await writeFileAsync(writeFilePath, string);
 
     // Return CID
     res.send(result.cid);
