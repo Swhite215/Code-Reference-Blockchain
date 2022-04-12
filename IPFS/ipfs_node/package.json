@@ -13,6 +13,7 @@
     "express": "^4.17.3",
     "ipfs": "^0.62.2",
     "ipfs-core": "^0.14.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "uint8arrays": "^3.0.0"
   }
 }
