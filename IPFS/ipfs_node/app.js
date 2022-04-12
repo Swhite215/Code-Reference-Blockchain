@@ -44,7 +44,7 @@ app.post('/upload-file/:fileName', async (req, res) => {
     let writtenFile = await writeFileAsync(writeFilePath, string);
 
     // Return CID
-    res.send(result.cid);
+    res.send(result);
 
 });
 
