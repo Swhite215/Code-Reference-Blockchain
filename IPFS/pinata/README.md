@@ -1,0 +1,1 @@
+Uploads a batch of images from the img folder to IPFS, using Pinata
