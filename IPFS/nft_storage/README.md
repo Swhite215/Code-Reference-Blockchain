@@ -41,3 +41,7 @@ Run the below commands inside root directory
 ```bash
   node upload_car.js
 ```
+
+## Issues
+
+This solution involves hitting an IPFS gateway for reading and writing. This means we may be subject to latency issues or rate limiting.
