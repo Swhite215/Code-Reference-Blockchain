@@ -22,6 +22,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
+
+// Using IPFS Regular Files API
 app.post('/upload-file/:fileName', async (req, res) => {
     // Get File
     let filePath = path.join(__dirname + "/" + req.params.fileName + ".txt");
@@ -47,6 +49,8 @@ app.post('/upload-file/:fileName', async (req, res) => {
     res.send(result);
 
 });
+
+// Using IPFS Mutable File System API
 
 // Create IPFS Node
 createIPFSNode = async () => {
