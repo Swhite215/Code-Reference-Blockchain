@@ -114,4 +114,23 @@ IPFS
                     - ipfs.cat(FULL IPFS PATH)
                     - ipfs.cat(IPFS PATH + FILE PATH)
                     - ipfs.cat(IPFS PATH + DIRECTORY + FILE PATH)
-                - 
+    - Mutable File System
+        - MFS - Treat files as if thery were mutable
+        - Command Format - ipfs.files.someMethod()
+        - Commands
+            - ipfs.files.stat() - check status of a file or directory
+        - Add a file to MFS
+            - ipfs_examples.js
+        - View Contents of a Directory
+            - ipfs_examples.js
+        - CIDs Change with Data
+        - Create a Directory
+            - ipfs_examples.js
+        - Move a File or Directory
+            - ipfs_examples.js
+        - Copy a File or Directory
+            - ipfs_examples.js
+        - Read the Contents of a File as a Buffer
+            - ipfs_examples.js
+        - Remove a File or Directory
+            - ipfs_examples.js
