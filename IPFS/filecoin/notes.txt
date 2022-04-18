@@ -1,0 +1,64 @@
+Fielcoin
+
+1. Incentivized, Decentralized Storage
+    - Filecoin, adds an incentive layer to promote long term, verifiable storage on the decentralized web
+    - Incentived Storage - storage miners, paid in Filecoin Tokens (FIL)
+    - Cryptographic Proofs - storage miners are responsible for proving they are storing the correct data over time
+        - Proof of Replication and Proof of Spacetime
+
+2. Preparing and Transferring Data
+    - Preparing Data for Storage
+        - 1 - Convert file to Filecoin Piece
+            - Chunk to IPLD DAG with CID
+            - Serialize to Content Addressable Archive
+    - Negotiating a Storage Deal and Transferring Data
+        - Hire storage miner to store a piece of data
+        - Sectors - storage unit
+        - Process
+            - Create deal proposal
+            - Send proposal to miner
+            - Miner agrees to store data
+            - Send data to miner
+            - Miner verifies data
+            - Miner publishes deal proposal on Filecoin, committing both parties to the deal
+
+3. Proof of Replication - PoRep
+    - PoRep - storage miner proves that they are storing a physically unique copy, or replica, of the data
+    - Process
+        - Storage miner receievs data and places into sector
+        - Once sector is full, a Commitment of Data CommD is produced
+        - Sealing
+            - Sector data is encoded through a sequence of graph and hasing to create a unique replica
+            - Root hash of merkle tree is the Commitment Replica Last CommRLast
+            - CommRLast is hashed with CommC to produce CommR, which is then recorded to the blockchain
+            - CommRLast is saved for future use in Proof of Spacetime
+
+4. Proof of Spacetime - PoSt
+    - Proof of Spacetime is run repeatedly to prove that they are continuing to dedicate storage space to that same data over time
+    - Process
+        - Run merkle inclusion proofs on random leaf nodes to show miner has specific bytes that shuold be there
+        - Miner uses CommRLast to prove they know the root for the replica
+        - Proofs are compressed into a single zk-SNARK
+        - Miners are required to put down a collateral, if they fail Proof of Spacetime, they are penalized
+
+5. zk-SNARKS
+    - Zero Knowledge Succinct Non-Interactive Arguments of Knowledge
+    - Hashes of computations
+    - Let us prove a proof has been done correctly without having to reveal the details of the proof itself or the underlying data
+
+6. Verifying Your Deal
+    - Key data needed to verify storage is stored on the Filecoin chain, a copy of which is maintained by each user running a node
+    - Proof of Spacetime can run regularly over time
+    - lotus client list-deals - list all storage deals proposed from that node
+    - Deal Structure
+        - Deal CID - content identifier for the deal proposal
+        - Deal ID - unique ID for the deal
+        - Provider - identifier for storage provider with whom the deal was made
+        - State - state of the deal (StorageDealActive)
+        - On Chain - boolean whether deal is stored on chain
+        - Slashed - boolean whether the storage provider has fialed a Proof of Spacetime
+        - Piece CID - CID representing the stored data
+        - Size - bytes of data
+        - Price - price per epocj in Filetoken FIL
+        - Duration - total duration of the agreed deal in epochs
+    - Requires running our own
