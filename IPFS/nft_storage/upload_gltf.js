@@ -6,7 +6,7 @@ const axios = require("axios");
 const mime = require('mime')
 
 // The 'fs' builtin module on Node.js provides access to the file system
-const fs = require('fs')
+const { readFile } = require('node:fs/promises');
 
 // The 'path' module provides helpers for manipulating filesystem paths
 const path = require('path')
@@ -17,18 +17,37 @@ const secrets = require('./secrets/token.json')
 const endpoint = 'https://api.nft.storage'
 const NFT_STORAGE_KEY = secrets.token;
 
+// GLTF Pipeline
+const gltfPipeline = require("gltf-pipeline");
+const fsExtra = require("fs-extra");
+const glbToGltf = gltfPipeline.glbToGltf;
+
 async function main() {
-    // Read in GLTF
-    let rawData = await readFile(path.join(__dirname + "/" + "monkey.gltf"));
+    // Read in GLB
+    let glb = await readFile(path.join(__dirname + "/" + "758_NFT_AWARDS_DESKTOP_FITS.glb"));
+
+    // Convert to GLTF
+    let results = await glbToGltf(glb);
 
     // Parse to JSON
-    let json = JSON.parse(rawData);
+    let json = results.gltf;
 
     // Upload Data
     uploadGLTF(json);
 }
 
-async function uploadGLTF() {
+// async function main() {
+//     // Read in GLTF
+//     let rawData = await readFile(path.join(__dirname + "/" + "monkey.gltf"));
+
+//     // Parse to JSON
+//     let json = JSON.parse(rawData);
+
+//     // Upload Data
+//     uploadGLTF(json);
+// }
+
+async function uploadGLTF(json) {
     try {
 
         let headers = {
